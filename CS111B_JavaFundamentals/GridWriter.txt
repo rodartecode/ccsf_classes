@@ -1,0 +1,21 @@
+Jesse E Rodarte
+04/23/19
+CS 111B
+GridWriter Assignment
+
+1.  In the GridWriter program every time it calls the add method to add My 
+    Circles and MyRectangles it uses polymorphism. The add method works with
+    GridItem object but we pass in our custom shape class objects. The same is
+    true about the display method. The display method uses GridItems, but we
+    use MyCircle and MyRectangle objects.
+2.  They are in scope because they are inhereted from the GridItem class.
+3.  GridItem's containsPoint method never gets called because it's overwritten
+    by the MyCircle and MyRectangle obects that we created.
+4.  The compiler gives errors because the containsPoint methods can no longer
+    see the x or y variables in the GridItem class and thus no longer inherits
+    them.
+5.  Since the GridItem's containsPoint method is never called it can be made
+    abstract. The same can be done with the getArea method. The whole class
+    can be abstract it seems.
+6.  The GridItems class could be made into an interface, and be implemented by
+    different custom classes.

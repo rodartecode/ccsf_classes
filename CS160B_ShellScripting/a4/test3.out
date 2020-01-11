@@ -1,0 +1,27 @@
+first arg is dir1
+directory found
+
+Running script1
+directory option used
+done processing options
+files.txt does not exist, creating
+dirs.dir does not exist, creating
+arg is dir1/dir1a
+scanning dir1/dir1a
+directory found
+directory found
+file found
+file found
+Done
+
+Running script2
+first arg is dirs.dir
+
+Reading from directories file: 
+Name: dir1/dir1a/dir1a1, Size: 6
+Name: dir1/dir1a/dir1a2, Size: 46
+
+Reading from files file: 
+Name: dir1/dir1a/file1, Size: 17
+Name: dir1/dir1a/file2, Size: 0
+Done

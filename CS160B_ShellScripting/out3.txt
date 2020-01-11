@@ -1,0 +1,64 @@
+Searching for a file
+File found!
+a2.sh 529
+
+Searching for a directory
+Directory found!
+
+Testing input
+Enter a number
+15
+I don't like your tone...
+
+Let's try again
+Enter a number
+502
+Woo baby, its L O R G E
+
+Ok let's take this one for a loop
+a1.sh is a File
+a2.sh is a File
+a3.sh is a File
+aTestDir is a Directory
+out2.txt is a File
+
+Let's go again!
+Iterator is at 7
+Iterator is at 10
+Iterator is at 13
+Iterator is at 16
+Iterator is at 19
+Iterator is at 22
+Iterator is at 25
+Iterator is at 28
+Iterator is at 31
+Iterator is at 34
+Iterator is at 37
+
+Ok let's play a game
+I need you to give me a number
+8
+NOPE. Not good enough
+I need you to give me a number
+9
+NOPE. Not good enough
+I need you to give me a number
+10
+NOPE. Not good enough
+I need you to give me a number
+999
+Oh yeah. That's a good number
+
+Ok, one more game and we're done
+Ok, are you ready to finish?
+ok
+Hm, I'm really not sure about that.
+Ok, are you ready to finish?
+yeah
+Hm, I'm really not sure about that.
+Ok, are you ready to finish?
+no
+Hm, I'm really not sure about that.
+Ok, are you ready to finish?
+yes
+Ok all done!

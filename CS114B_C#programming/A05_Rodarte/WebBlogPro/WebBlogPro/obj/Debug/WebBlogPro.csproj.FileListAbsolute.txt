@@ -1,0 +1,7 @@
+D:\C#\114B\A05_Rodarte\WebBlogPro\WebBlogPro\bin\Debug\WebBlogPro.exe.config
+D:\C#\114B\A05_Rodarte\WebBlogPro\WebBlogPro\bin\Debug\WebBlogPro.exe
+D:\C#\114B\A05_Rodarte\WebBlogPro\WebBlogPro\bin\Debug\WebBlogPro.pdb
+D:\C#\114B\A05_Rodarte\WebBlogPro\WebBlogPro\obj\Debug\WebBlogPro.csprojAssemblyReference.cache
+D:\C#\114B\A05_Rodarte\WebBlogPro\WebBlogPro\obj\Debug\WebBlogPro.csproj.CoreCompileInputs.cache
+D:\C#\114B\A05_Rodarte\WebBlogPro\WebBlogPro\obj\Debug\WebBlogPro.exe
+D:\C#\114B\A05_Rodarte\WebBlogPro\WebBlogPro\obj\Debug\WebBlogPro.pdb

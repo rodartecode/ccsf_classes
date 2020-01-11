@@ -1,0 +1,18 @@
+directory option used
+files option used
+done processing options
+files.out does not exist, creating
+dirslist.out does not exist, creating
+arg is dir1/dir1a/dir1a2
+scanning dir1/dir1a/dir1a2
+directory found
+file found
+arg is dir2/dir2a1
+scanning dir2/dir2a1
+directory found
+file found
+arg is dir1
+scanning dir1
+directory found
+file found
+file found

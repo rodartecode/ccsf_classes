@@ -1,0 +1,24 @@
+Creating aliases
+Using aliases
+a1 'ls -lch':
+total 52K
+-rwx--x--x 1 jrodarte students   36 Apr 29 21:35 a1.sh
+-rwx------ 1 jrodarte students  529 Apr  7 13:51 a2.sh
+-rwx--x--x 1 jrodarte students 2.3K Apr 11 22:52 a3.sh
+drwx------ 2 jrodarte students  145 Apr 29 20:17 a4
+-rw------- 1 jrodarte students 4.1K Apr 29 21:46 a4.zip
+-rw-r--r-- 1 jrodarte students  964 Apr 29 21:33 a5.out
+-rwxr-xr-x 1 jrodarte students  945 Apr 29 21:46 a5.sh
+-rw------- 1 jrodarte students  564 May  3 15:03 a6_1.out
+-rw------- 1 jrodarte students   45 May  3 15:07 a6_2.out
+-rwx--x--x 1 jrodarte students 1.2K May  3 15:01 a6.sh
+drwx------ 4 jrodarte students  282 Apr 29 21:32 aTestDir
+-rw------- 1 jrodarte students  641 Apr  7 13:45 out2.txt
+-rw------- 1 jrodarte students 1.1K Apr 11 22:54 out3.txt
+-rw------- 1 jrodarte students   63 May  3 15:03 textfile.txt
+a2 'echo v1 is $v1'
+v1 is this is v1
+a3 'echo v2 is $v2 and c1 is $c1'
+v2 is this is v2 and c1 is THIS IS CONSTANT
+Changing v1 and using a2 again
+v1 is Oh god whats happening

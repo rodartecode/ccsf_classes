@@ -1,0 +1,46 @@
+~~~~~~~~
+assignment3.txt
+jesse e rodarte
+cs 160a
+~~~~~~~~
+
+a)
+$ ls -a | wc -l
+17
+
+b)
+$ sort -u -k7 famous.dat | wc -l
+33
+
+c)
+$ tail -n8 famous.dat | cut -c6-35 | sort | tr '[:lower:]' '[:upper:]'
+DARWIN         CHARLES        
+EINSTEIN       ALBERT         
+GALILEO        GALILELI       
+GOLDMAN        EMMA           
+LOVELACE       ADA            
+MANDELA        NELSON         
+PARKS          ROSA           
+RUSSELL        BERTRAND    
+
+d)
+$ cut -c6-35,44-48 famous.dat | sort -n -k3 -k1 | head -n15
+moose          bullwinkle     94111
+franti         michael        94112
+marley         bob            94112
+richards       keith          94112
+simone         nina           94112
+einstein       albert         94113
+russell        bertrand       94113
+oliver         mary           94114
+hanh           thichNhat      94115
+kropotkin      peter          94115
+chomsky        noam           94116
+squirrel       rocketJ        94122
+chapman        tracy          94211
+marley         rita           94212
+black          mary           94221
+
+e)
+$ date | cut -c1-3 | tr '[:upper:]' '[:lower:]'
+thu

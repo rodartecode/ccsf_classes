@@ -1,0 +1,41 @@
+~~~~~~~~
+assignment2.txt
+jesse e rodarte
+cs 160a
+~~~~~~~~
+
+a)
+$ pwd
+/students/jrodarte/bin
+
+b)
+$ ls -li . datafiles
+.:
+total 4
+420341750 drwx------ 2 jrodarte students   65 Jun 16 20:54 datafiles
+323799442 -rw------- 2 jrodarte students 2401 Jun 16 20:24 famous.data
+
+datafiles:
+total 8
+420341753 -rw------- 1 jrodarte students 2401 Jun 16 20:29 famous.backup
+323799442 -rw------- 2 jrodarte students 2401 Jun 16 20:24 famous.hard
+420341755 lrwxrwxrwx 1 jrodarte students   34 Jun 16 20:54 famous.soft -> /students/jrodarte/bin/famous.data
+
+c)
+$ ls -lL datafiles
+total 12
+-rw------- 1 jrodarte students 2401 Jun 16 20:29 famous.backup
+-rw------- 2 jrodarte students 2401 Jun 16 20:24 famous.hard
+-rw------- 2 jrodarte students 2401 Jun 16 20:24 famous.soft
+
+d)
+$ ls -lL datafiles/*.*["fu"]*
+-rw------- 1 jrodarte students 2401 Jun 16 20:29 datafiles/famous.backup
+-rw------- 2 jrodarte students 2401 Jun 16 20:24 datafiles/famous.soft
+
+e)
+$ ls -lL *.[[:lower:]]*["rt"]? *data*/*.[[:lower:]]*["rt"]?
+-rw------- 2 jrodarte students 2401 Jun 16 20:24 datafiles/famous.hard
+-rw------- 2 jrodarte students 2401 Jun 16 20:24 famous.data
+
+

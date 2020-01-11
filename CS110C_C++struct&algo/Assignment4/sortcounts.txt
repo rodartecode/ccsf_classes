@@ -1,0 +1,10 @@
+sort algo	length		pass1		pass2		pass3		avg
+bubble		8
+bubble		32
+bubble		128
+merge		8
+merge		32
+merge		128
+count		8
+count		32
+count		128

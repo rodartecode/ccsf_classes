@@ -1,0 +1,7 @@
+D:\C#\114B\A03_Rodarte\hallmark\hallmark\bin\Debug\hallmark.exe.config
+D:\C#\114B\A03_Rodarte\hallmark\hallmark\bin\Debug\hallmark.exe
+D:\C#\114B\A03_Rodarte\hallmark\hallmark\bin\Debug\hallmark.pdb
+D:\C#\114B\A03_Rodarte\hallmark\hallmark\obj\Debug\hallmark.csprojAssemblyReference.cache
+D:\C#\114B\A03_Rodarte\hallmark\hallmark\obj\Debug\hallmark.csproj.CoreCompileInputs.cache
+D:\C#\114B\A03_Rodarte\hallmark\hallmark\obj\Debug\hallmark.exe
+D:\C#\114B\A03_Rodarte\hallmark\hallmark\obj\Debug\hallmark.pdb

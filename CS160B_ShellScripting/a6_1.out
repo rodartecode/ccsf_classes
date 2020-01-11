@@ -1,0 +1,29 @@
+Creating variables
+v1 is This is a variable
+v2 is 22
+c1 is THIS IS CONSTANT
+c2 is 111
+
+Unsetting v1
+v1 is 
+
+Changing constant c1
+./a6.sh: line 38: c1: readonly variable
+c1 is THIS IS CONSTANT
+
+Unsetting constant c2
+./a6.sh: line 43: unset: c2: cannot unset: readonly variable
+c2 is 111
+
+Creating file with text
+File created with the text:
+this is some text for a file
+some more text for the file omnom
+Exec redirecting stdin from text file
+Reading input in loop
+Line was read: this is some text for a file
+Line was read: some more text for the file omnom
+
+done.
+
+

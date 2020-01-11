@@ -1,0 +1,14 @@
+﻿  SortedListHasA.cpp
+d:\c++\110c\assignment5\assignment5\assignment5\linkedlist.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  d:\c++\110c\assignment5\assignment5\assignment5\linkedlist.h(51): note: see reference to class template instantiation 'LinkedList<ItemType>' being compiled
+d:\c++\110c\assignment5\assignment5\assignment5\linkedlist.h(50): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+d:\c++\110c\assignment5\assignment5\assignment5\sortedlisthasa.cpp(104): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+d:\c++\110c\assignment5\assignment5\assignment5\sortedlisthasa.cpp(42): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  d:\c++\110c\assignment5\assignment5\assignment5\sortedlisthasa.cpp(41): note: while compiling class template member function 'void SortedListHasA<std::string>::insertSorted(const ItemType &)'
+          with
+          [
+              ItemType=std::string
+          ]
+  Assignment5.cpp
+  Generating Code...
+  Assignment5.vcxproj -> D:\c++\110C\Assignment5\Assignment5\Debug\Assignment5.exe

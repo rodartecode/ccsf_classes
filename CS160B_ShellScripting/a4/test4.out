@@ -1,0 +1,27 @@
+directory found
+directory found
+
+Running script1
+directory option used
+done processing options
+arg is ./dir1
+scanning ./dir1
+directory found
+file found
+file found
+arg is ./dir2
+scanning ./dir2
+directory found
+Done
+
+Running script2
+first arg is dirs.dir
+
+Reading from directories file: 
+Name: ./dir1/dir1a, Size: 60
+Name: ./dir2/dir2a, Size: 20
+
+Reading from files file: 
+Name: ./dir1/file1, Size: 19
+Name: ./dir1/file2, Size: 0
+Done

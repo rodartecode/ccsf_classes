@@ -1,0 +1,50 @@
+~~~~~~~~
+assignment4.txt
+jesse e rodarte
+cs 160a
+~~~~~~~~
+
+
+a)
+
+[jrodarte@hills ~]$ find /pub/cs/ -name cs160a 2>/dev/null
+/pub/cs/cmetzler/bin/cs160a
+/pub/cs/cconner/cs160a
+/pub/cs/gboyd/cs160a
+/pub/cs/gboyd/cs160a/paths/jmoraz/cs160a
+/pub/cs/grwoo/cs160a
+/pub/cs/bstapleton/cs160a
+
+b)
+
+[jrodarte@hills ~]$ sed 's/2nd/2nd STREET/g' famous.dat | sed 's/3rd/3rd STREET/g' | head -n9
+01 m motzart        amadeous        25 2nd STREET 94233
+02 m guthrie        woody           23 2nd STREET 94223
+03 f simone         nina            27 2nd STREET 94112
+04 m lennon         john            29 2nd STREET 94221
+05 f harris         emmylou         20 2nd STREET 94222
+06 m marley         bob             22 2nd STREET 94112
+07 f marley         rita            26 2nd STREET 94212
+08 f warwick        dione           26 2nd STREET 94222
+09 m prine          john            35 3rd STREET 94321
+
+c)
+
+[jrodarte@hills ~]$ grep '..[1].[01]$' famous.dat
+26 m moose          bullwinkle      16 1st 94111
+
+
+d)
+
+[jrodarte@hills ~]$ grep '[^01238][^01238][^01238][^01238][^01238]$' famous.dat
+19 f mitchell       joni            40 4th 94444
+24 m heinlein       robert          74 7th 94765
+25 m asimov         isaac           75 7th 94777
+38 f tubman         harriet         50 5th 95555
+41 m douglas        frederick       66 6th 94666
+44 f parks          rosa            72 7th 94777
+
+e)
+
+[jrodarte@hills ~]$ grep '<body>' ./public_html/*.html ./public_html/*.htm 2>/dev/null
+./public_html/test.html:<body>

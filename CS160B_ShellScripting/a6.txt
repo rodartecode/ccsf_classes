@@ -1,0 +1,34 @@
+Jesse E Rodarte
+05/03/19
+CS160B
+Miscellaneous Topics
+
+Having learned C++ as my first programming language, the
+concept of constant variables is very familiar and 
+comfortable to me, so I was glad to see these were also
+available in bash. I recently did a project using python
+and when I found out I couldn't make constant variables
+I was very perturbed. I expect to use constant variables
+quite liberally in my scripts.
+
+Aliases seem to be quite useful for your own personal 
+shell usage, but it seems their usage in scripts is a
+bit limited. I had originally tried to do everything in
+the same script,  including declaring and using aliases.
+I wasn't able to get it to work and all solutions I could
+find online seemed to suggest doing some sort of strange 
+workarounda. Because of this I ended up doing all my alias
+testing in my interactive shell instead and redirect the
+output to an output file.
+
+Aliases are going to be quite useful to me now that I have 
+a better understanding of how they work. I'm already 
+planning on creating some for my windows command prompt at
+work to make it a bit more familiar for me to use and get
+more comfortable.
+
+The exec command is still a bit confusing, but I read the
+man page and the tldp.org section and some discussion on 
+Stackoverflow. It's still a little confusing, but I'm
+planning expirementing with it more to redirect input and
+output to and from files, which will be very useful.

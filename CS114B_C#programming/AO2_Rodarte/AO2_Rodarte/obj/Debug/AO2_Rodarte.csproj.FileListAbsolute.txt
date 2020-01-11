@@ -1,0 +1,7 @@
+D:\C#\114B\AO2_Rodarte\AO2_Rodarte\bin\Debug\AO2_Rodarte.exe.config
+D:\C#\114B\AO2_Rodarte\AO2_Rodarte\bin\Debug\AO2_Rodarte.exe
+D:\C#\114B\AO2_Rodarte\AO2_Rodarte\bin\Debug\AO2_Rodarte.pdb
+D:\C#\114B\AO2_Rodarte\AO2_Rodarte\obj\Debug\AO2_Rodarte.csprojAssemblyReference.cache
+D:\C#\114B\AO2_Rodarte\AO2_Rodarte\obj\Debug\AO2_Rodarte.csproj.CoreCompileInputs.cache
+D:\C#\114B\AO2_Rodarte\AO2_Rodarte\obj\Debug\AO2_Rodarte.exe
+D:\C#\114B\AO2_Rodarte\AO2_Rodarte\obj\Debug\AO2_Rodarte.pdb

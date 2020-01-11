@@ -1,0 +1,44 @@
+Searching: paramlab
+paramlab/dirs.dir is a file
+paramlab/dirslist.out is a file
+paramlab/files.out is a file
+paramlab/files.txt is a file
+paramlab/script1.sh is a file
+paramlab/script2.sh is a file
+paramlab/script3.sh is a file
+paramlab/test1.out is a file
+paramlab/test2.out is a file
+paramlab/test3.out is a file
+paramlab/test4.out is a file
+paramlab/test5.out is a file
+paramlab/test6.out is a file
+
+Reading file sizes
+No directory provided, searching current directory
+./a1 is a file
+./a4.out is a file
+./a4.sh is a file
+./b1 is a file
+./c1 is a file
+./d1 is a file
+./dir.dir is a file
+./dirs.dir is a file
+./dirs.list is a file
+./dirs.txt is a file
+./file.file is a file
+./files.list is a file
+./files.txt is a file
+./script1.sh is a file
+./script2.sh is a file
+./script3.sh is a file
+
+Reading file sizes
+Searching: ..
+../a1.sh is a file
+../a2.sh is a file
+../a3.sh is a file
+../a4.sh is a file
+../out2.txt is a file
+../out3.txt is a file
+
+Reading file sizes

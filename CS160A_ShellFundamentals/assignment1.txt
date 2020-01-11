@@ -1,0 +1,60 @@
+$ echo "$HOME"
+/students/jrodarte
+
+
+$ echo "$LOGNAME" ; date
+jrodarte
+Wed Jun 13 11:30:13 PDT 2018
+
+
+$ echo "$HOSTNAME" > temp1
+$ uptime >> temp1
+
+
+$ cat temp1
+hills.ccsf.edu
+
+11:32:50 up 14 days,  3:19, 26 users,  load average: 0.08, 0.05, 0.05
+
+
+$ who | pr -l20 -2 -n
+
+
+2018-06-13 11:44                                                  Page 1
+
+
+    1   jgonz254 pts/0        2018-    11   zzhan136 pts/10       2018-
+    2   emanzon  pts/1        2018-    12   jmontoro pts/11       2018-
+    3   tlu29    pts/2        2018-    13   yyang121 pts/12       2018-
+    4   mguerr27 pts/3        2018-    14   afinch1  pts/13       2018-
+    5   kknapp3  pts/4        2018-    15   facebo   pts/14       2018-
+    6   cjohn134 pts/5        2018-    16   ewill105 pts/17       2018-
+    7   fgodine1 pts/6        2018-    17   relias3  pts/18       2018-
+    8   tkozhevn pts/7        2018-    18   sleslie1 pts/19       2018-
+    9   anavar50 pts/8        2018-    19   lseow    pts/20       2018-
+   10   kma58    pts/9        2018-    20   dholzman pts/21       2018-
+
+
+
+
+
+
+
+2018-06-13 11:44                                                  Page 2
+
+
+   21   atao4    pts/22       2018-    24   jrodarte pts/25       2018-
+   22   echan90  pts/23       2018-    25   kramos1  pts/26       2018-
+   23   tboochee pts/24       2018-    26   khuang72 pts/27       2018-
+
+
+
+
+
+
+
+
+
+
+
+

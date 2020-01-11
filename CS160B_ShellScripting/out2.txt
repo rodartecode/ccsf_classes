@@ -1,0 +1,33 @@
+Jesse E Rodarte
+04/07/19
+a2.sh ouput file and comments:
+
+this is a string
+
+1) Outputs the string as expected
+
+this is a string
+
+2) Also expected result, no funny business in these strings
+
+this is this is a string
+
+3) This one expands the variable as expected because its within double quotes
+
+this is $string1
+
+4) This one uses single quotes, thus there is no variable substitution.
+
+9
+
+5) PEMDAS math evaluation, outputs result as expected
+
+3
+
+6) Variable substitution happened as expected and equation was evaluated
+correctly.
+
+a1.sh a2.sh
+
+7) Printed all files that matched the "a*" wildcard glob, of which there
+were 2 in my directory.

@@ -1,0 +1,7 @@
+D:\C#\114B\A04_Rodarte\Administrator\Administrator\bin\Debug\Administrator.exe.config
+D:\C#\114B\A04_Rodarte\Administrator\Administrator\bin\Debug\Administrator.exe
+D:\C#\114B\A04_Rodarte\Administrator\Administrator\bin\Debug\Administrator.pdb
+D:\C#\114B\A04_Rodarte\Administrator\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+D:\C#\114B\A04_Rodarte\Administrator\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+D:\C#\114B\A04_Rodarte\Administrator\Administrator\obj\Debug\Administrator.exe
+D:\C#\114B\A04_Rodarte\Administrator\Administrator\obj\Debug\Administrator.pdb

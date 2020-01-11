@@ -1,0 +1,13 @@
+first arg is dirslist.out
+second arg is files.out
+
+Reading from directories file: 
+Name: dir1/dir1a/dir1a2/anDeepDir, Size: 6
+Name: dir2/dir2a1/dir2a1, Size: 19
+Name: dir1/dir1a, Size: 60
+
+Reading from files file: 
+Name: dir1/dir1a/dir1a2/dir1a2.testfile, Size: 0
+Name: dir2/dir2a1/file1, Size: 24
+Name: dir1/file1, Size: 19
+Name: dir1/file2, Size: 0

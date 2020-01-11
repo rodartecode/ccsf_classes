@@ -1,0 +1,19 @@
+sort algor	length		pass1		pass2		pass3		avg
+bubble		8		72		142		126		113
+bubble		32		2170		2346		1810		2108
+bubble		128		33578		37244		36320		35714
+
+merge		8		126		128		126		126
+merge		32		884		886		884		884
+merge		128		5056		5028		5058		5047
+
+count		8		98		98		98		98
+count		32		242		242		242		242
+count		128		818		818		818		818
+
+
+question 3:
+
+The counting sort efficiency depends on size. Big O notation would be
+O(n+k); It is generally only practical if the range of values(k) is smaller
+than n.
