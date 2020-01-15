@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/css" href="mycss.css" ?>
+<!-- This document contains information about Courses offered by CNIT Department at City College -->
+
+<cnit>
+<title>Courses for CNIT Department at City College of San Francisco</title>
+<message>
+<![CDATA[
+   Included are the 3 different courses I teach at City College of San Francisco.
+]]>
+</message>
+ 
+   <course>CNIT-100
+       <description>Introduction to Computers</description> 
+       <location>Science Building - Room #8</location>
+       <topic>Hardware and Software</topic> 
+       <topic>Internet, E-mail</topic>
+       <topic>Basics of MS Office</topic>
+   </course>
+
+   <course>CNIT-131 
+       <description>Internet and Introduction to HTML</description>
+       <location>Mission Campus - Room #475 and Art Building - Room #183</location>
+       <topic>Internet and basic concepts</topic> 
+       <topic>Security</topic>
+       <topic>Basics of HTML</topic>
+   </course>
+
+   <course>CNIT-132
+       <description>Intermediate HTML/XHTML</description>
+       <location>Science Building - Room #8</location>
+       <topic>Basics of HTML</topic> 
+       <topic>Intermediate XHTML</topic>
+       <topic>JavaScript, CSS</topic>
+   </course>
+
+   <course>CNIT-134
+       <description>ASP.NET</description>
+       <location>Online Course</location>
+       <topic>Intro to Visual Studio</topic> 
+       <topic>Intro to ASP.NET</topic>
+       <topic>Working with .NET Controls</topic>
+   </course>
+</cnit>

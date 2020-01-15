@@ -1,0 +1,87 @@
+<!DOCTYPE.html>
+<html lang="en">
+<head>
+   <title>Flexbox Examples</title>
+   <meta charset="utf-8">
+   <meta name="description" content="different examples of CSS properties used for flexbox">
+   <style>
+      .flex1 { display: flex; flex-direction: row-reverse; width: 400px; height: 200px; background-color: lightgrey; margin-bottom: 10px;}
+	  
+	  .child1 { width: 50px; height: 50px; line-height: 50px; text-align: center; background-color:cyan; color: blue; font-weight:bold; margin: 5px; }
+	  
+      .flex2 { display: flex; flex-wrap: wrap-reverse; width: 400px; height: 200px; background-color: lightgrey; margin-bottom: 10px; }
+	  
+	  .flex3 { display: flex; align-items: flex-end; width: 400px; background-color: lightgrey; margin-bottom: 10px;}
+	  
+	  .child2 { background-color: lime; font-style: italic; margin: 5px; }
+
+	  .flex4 { display: flex; flex-wrap: wrap; align-content: space-around; width: 400px; height: 200px; background-color: lightgrey; justify-content: space-between; }
+	  
+	  .child3 { background-color: lime; padding: 10px; }
+	  
+	  .flex5 { display: flex; align-content: space-between; width: 300px; height: 180px; background-color: cyan; }
+	  
+	  .child5 { background-color: yellow; margin:5px;}
+	  
+	  .forder1 { order: 2; }
+	  .forder2 { order: 3; }
+	  .forder3 { order: 1; }
+	  
+	  .flex6 { display: flex; background-color: violet; }
+	  
+	  .child6 { background-color: lightgray; margin: 5px; justify-content: center; }
+	  
+	  .flex1 { flex-growth: 1; }
+	  .flex2 { flex-growth: 1; flex-shrink: 0; }
+   </style>
+</head>
+<body>
+<div class="flex1">
+   <div class="child1">1</div>
+   <div class="child1">2</div>
+   <div class="child1">3</div>
+   <div class="child1">4</div>
+</div>
+<div class="flex2">
+   <div class="child1">1</div>
+   <div class="child1">2</div>
+   <div class="child1">3</div>
+   <div class="child1">4</div>
+   <div class="child1">5</div>
+   <div class="child1">6</div>
+   <div class="child1">7</div>
+   <div class="child1">8</div>
+</div>
+<div class="flex3">
+   <div class="child2">Flex 1: Some content here</div>
+   <div class="child2">Flex 2: This flex item has some more content than the first one</div>
+   <div class="child2">Flex 3: Here we go with more content just to have more content than the two previous flex items<br>This one has even a breaking line tag</div>
+   <div class="child2">Number 4</div>
+</div>
+<div class="flex4">
+   <div class="child3">Flex 1</div>
+   <div class="child3">Flex 2</div>
+   <div class="child3">Flex 3</div>
+   <div class="child3">Flex 4</div>
+   <div class="child3">Flex 5</div>
+   <div class="child3">Flex 6</div>   
+   <div class="child3">Flex 7</div>
+   <div class="child3">Flex 8</div>
+   <div class="child3">Flex 9</div>
+   <div class="child3">Flex A</div>
+   <div class="child3">Flex B</div>
+   <div class="child3">Flex C</div>   
+</div>
+<div class="flex5">
+   <div class="child5 forder1">B</div>
+   <div class="child5 forder2">C</div>
+   <div class="child5 forder3">A</div>
+</div>
+<div class="flex6">
+   <div class="child6 flex1">Flex item A</div>
+   <div class="child6">Flex item B</div>
+   <div class="child6">Flex item C</div>
+   <div class="child6 flex2">Flex item D</div>
+</div>   
+</body>
+</html>

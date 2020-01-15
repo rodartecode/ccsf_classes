@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Working with Plug-ins</title>
+<meta charset="utf-8">
+<meta name="description" content="page with plugins examples">
+</head>
+<body>
+<h1>A Flash Sample</h1>
+<object type="application/x-shockwave-flash" data="flashlogo.swf" width="300" height="70" title="Add a little Flash to your web page">
+It seems your browser is not able to support the object tag the way it was coded here
+    <param name="movie" value="flashlogo.swf" />
+    <param name="bgcolor" value="#ffffff" />
+    <param name="quality" value="high" />
+    <p>Add a little Flash to your web page</p>
+</object>
+<h1>HTML5</h1>
+<h2>Embed tag</h2>
+<embed type="application/x-shockwave-flash" src="fall5.swf" 
+		width="640" 
+		height="100" 
+		quality="high”
+		title="Fall Nature Hikes">
+<h2>Audio tag</h2>
+<audio controls="controls">
+   <source src="soundloop.mp3" type="audio/mpeg">
+   <source src="soundloop.ogg" type="audio/ogg"> 
+   <a href="soundloop.mp3">Download the Audio File</a> (MP3)
+</audio>
+<h2>Video tag</h2>
+<video controls="controls" poster="sparky.jpg"
+      width="160" height="150">
+	<source src="sparky.mov" type="video/mp4"> 
+	<source src="sparky.webm" type="video/webm">
+   <a href="sparky.mov">Sparky the Dog</a> (.mov)
+</video>
+<h2>Embedding another web page</h2>
+<object data="table.html" width="350" height="250"></object>
+<h2>Video from YouTube</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_JmA2ClUvUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

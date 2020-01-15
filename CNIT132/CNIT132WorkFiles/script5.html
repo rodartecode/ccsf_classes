@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Using the Return Keyword</title>
+<script type="text/javascript">
+//<![CDATA[
+function doCars() {
+ var myNumberOfToyotas = 40;
+ var myNumberOfHondas = 20;
+ var myTotalNumberOfCars = addMe(myNumberOfToyotas, myNumberOfHondas);
+ var myMsg = "We have " + myTotalNumberOfCars + " cars in stock";
+ alert(myMsg);
+ var myNumberOfChev = 30;
+ var myNumberOfFord = 15;
+ var myTotalNumberOfCars = addMe(myNumberOfChev, myNumberOfFord);
+ var myMsg = "We have " + myTotalNumberOfCars + " cars in stock";
+ alert(myMsg);
+}
+
+function addMe(myFirstNum, mySecondNum) {
+ var myAnswer = myFirstNum + mySecondNum;
+ return myAnswer;
+}
+
+/*]]>*/
+</script>
+</head>
+<body>
+<p><form>
+<input type="button" value="Total Cars" onclick="doCars();" /> 
+</form></p>
+</body>
+</html>

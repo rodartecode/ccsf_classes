@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Using lists</title>
+</head>
+<body>
+<p>Observe the lists below:</p>
+
+<ul type="square">
+    <li>First item of the list</li>
+    <li>Second item of the list</li>
+    <li>Third item of the list</li>
+    <li>Fourth item of the list</li>
+</ul>
+
+<p>Now, you will see an ordered list with nested lists</p>
+
+<ol>
+    <li type="A">This item will start with A</li>
+    <li type="I">Changing the type to capital roman numbers but not the order
+    <ol type="a">
+	<li>first nested with type a</li>
+	<li>second nested with type a
+        <ul type="circle">
+           <li>First item</li>
+           <li>Second item</li>
+        </ul>
+        </li>
+        <li>third nested with type a</li>
+    </ol>
+    </li>
+    <li type="1">Go back to outside list, type 1 but order continues</li>
+    <li type="i">Type is now lowercase roman number</li>
+    <li>No type defined, goes to default=number</li>
+    <li>No type defined again - this will be the last item</li>
+</ol>
+
+<p>Now we present a more compacted list. Just using the compact attribute. You will not notice too much difference - this attribute has not been very much used!</p>
+<ul>
+	<li>First compact
+        <ul>
+           <li>Son of first compact</li>
+           <li>Daughter of first compact
+           <ul>
+              <li>Grandkid</li>
+           </ul>
+           </li>
+        </ul>
+        </li>  
+	<li>Second compact</li>
+	<li>Third compact</li>
+</ul>
+
+</body>
+</html>

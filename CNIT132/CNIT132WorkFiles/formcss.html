@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Form</title>
+<meta charset="utf-8">
+<style>
+#myForm { background-color:#eaeaea;
+	font-family: Arial, sans-serif;
+	width:400px; }
+label { float: left;
+	width: 120px; 
+	text-align: right; 
+	padding-right: 10px;
+	margin-top: 10px; }
+input, textarea { margin-top: 10px; }
+#mySubmit { margin-left: 130px;
+           padding-bottom: 10px; }
+</style>
+</head>
+<body>
+<h1>Contact Us</h1>
+
+<form method="post" id="myForm" >
+<div>
+  <label for="myName">Name:</label>
+  <input type="text" name="myName" id="myName">
+</div>
+<div>
+  <label for="myEmail">E-mail:</label>
+  <input type="email" name="myEmail" id="myEmail">
+</div>
+<div>
+  <label for="myComments">Comments:</label>
+  <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+</div>
+<div id="mySubmit">
+  <input type="submit" value="Submit">
+</div>
+</form>
+</body>
+</html>

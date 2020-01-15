@@ -1,0 +1,17 @@
+.grid {
+ display: grid;
+ grid-gap: 25px;
+ grid-template-columns: 200px 350px auto;
+ grid-template-rows: 25% 75%;
+ margin: 25px auto;
+ width: 800px;
+ height: 600px;
+}
+/*Some simple styling*/
+.grid-area {
+ font-family: Helvetica, Arial, sans-serif;
+ background-color: #c1d798;
+ color: #fff;
+ padding: 50px 25px;
+ text-align: center;
+}

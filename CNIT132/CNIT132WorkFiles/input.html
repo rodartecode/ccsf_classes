@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The new input type in HTML5</title>
+<meta charset="utf-8">
+<meta name="description" content="using new HTML5 input type elements">
+</head>
+<body>
+<h2>Testing different input type from HTML5</h2>
+<form method="post" action="http://www.google.com">
+<label for="favcolor">Color: </label>
+<input type="color" name="favcolor" id="favcolor" />
+<br>
+<br>
+<label for="startdate">Start Date: </label>
+<input type="date" name="startdate" id="startdate" />
+<br>
+<br>
+<label for="classtime">Class Date &amp; Time: </label>
+<input type="datetime" name="classtime" id="classtime" />
+<br>
+<br>
+<label for="myemail">Your email: </label>
+<input type="email" name="myemail" id="myemail" required />
+<br>
+<br>
+<label for="studymonth">Which month you intend to start the course: </label>
+<input type="month" name="studymonth" id="studymonth" />
+<br>
+<br>
+<label for="people">How many people travelling with you: </label>
+<input type="number" name="people" id="people" value="1" min="1" max="5" />
+<br>
+<br>
+<label for="eval">Evaluation of the trip: </label>
+Horrible<input type="range" name="eval" id="eval" min="1" max="5" />Great
+<br>
+<br>
+<label for="tel1">Type your telephone: </label>
+<input type="tel" name="tel1" id="tel1" required />
+<br>
+<br>
+<label for="webpage">URL of favorite website: </label>
+<input type="url" name="webpage" id="webpage" />
+<br>
+<br>
+<label for="week1">Week of timeshare: </label>
+<input type="week" name="week1" id="week1" />
+<br>
+<br>
+<input type="submit" value="Submit Info" />&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear Form" />
+</form>
+</body>
+</html>

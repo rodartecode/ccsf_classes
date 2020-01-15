@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Images in JavaScript</title>
+<meta charset="utf-8">
+<meta name="description" content="images in JavaScript">
+<script>
+  function changeimg() {
+    var first = new Image();
+	var second = new Image();
+	first.src = "clock.png";
+	second.src = "oldboat.gif";
+	var x = document.getElementById('fig1').src = first.src;
+  }
+</script>
+<style>
+  img { display: block;
+        border: 2px solid red;}
+</style>
+</head>
+<body>
+<h1>Some JavaScript here</h1>
+<button type="button" onClick="changeimg();">Change the Image</button>
+<img id="fig1" src="oldboat.gif" alt="starting with the old boat but will have the clock">
+</body>
+</html>

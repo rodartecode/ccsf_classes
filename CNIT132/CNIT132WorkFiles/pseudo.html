@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Pseudo Classes-Elements</title>
+ <meta charset="utf-8">
+ <meta name="description" content="working with pseudo classes and pseudo elements">
+ <style>
+    a:link, a:visited, a:hover { text-decoration: none; color: red; }
+	a:hover { background-color: yellow; }
+	
+	p::first-letter { font-size: 3em; color:blue; }
+	
+	li::after { content: url(trillium.gif); }
+ </style>
+</head>
+<body>
+<p>This is a paragraph with a link to <a href="http://www.ccsf.edu" target="_blank">CCSF Website</a></p>
+<p>Just another paragraph to notice the first letter that is big and blue</p>
+<p>The list below will have a small trillium shown after each item because of the use of the pseudo element ::after</p>
+<ul>
+   <li>Item 1</li>
+   <li>Item 2</li>
+</ul>
+</body>
+</html>

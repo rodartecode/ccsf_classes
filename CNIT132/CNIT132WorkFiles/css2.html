@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Working with CSS</title>
+<meta name="description" content="some interesting ways of using pseudo elements or pseudo classes">
+<style type="text/css">
+	h1 {color:red; font-weight:bold; font-style:italic;}
+	p::first-letter {font-size:200%; font-weight:bold;}
+	ul {counter-reset:item; list-style:none;}
+	ul li::before {content:"Item #" counters(item, ".") " "; counter-increment:item;}
+</style>
+</head>
+<body>
+<h1>Red bold italic heading</h1>
+<p>Take a look at the first letter here in this paragraph! It is double the size of the rest of the letters and it should be also bold! This is a great feature to call the attention of the readers when a new paragraph starts. This paragraph is long on purpose as we will be using another style so the first line of the paragraph will be presented in a different style than the rest of the paragraph.</p>
+<h3>This heading does not follow any style</h3>
+<p>Another paragraph and, again, this has the first letter following the same style you see in the first paragraph!</p>
+<p>The following unordered list has a special style!</p>
+<ul>
+  <li>This is item 1</li>
+  <ul>
+    <li>This is a sub-item for item 1</li>
+    <li>This is a second sub-item for item 1</li>
+  </ul>
+  <li>This is item 2</li>
+  <li>This is item 3</li>
+  <ul>
+    <li>This is a sub-item for item 3</li>
+  </ul>
+</ul>
+</body>
+</html>

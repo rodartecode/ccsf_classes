@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sample JavaScript</title>
+<script type="text/javascript">
+//<![CDATA[
+function doLink(message, URL) {
+ alert(message);
+ // window.open(URL, "claudia", "width=500,height=400,resizable,scrollbars,menubar,status,location,toolbar");
+ window.open(URL, "claudia", "width=500,height=400,menubar=1,status=1");
+
+/* status  The status bar at the bottom of the window. 
+toolbar  The standard browser toolbar, with buttons such as Back and Forward. 
+location  The Location entry field where you enter the URL. 
+menubar  The menu bar of the window 
+directories  The standard browser directory buttons, such as What's New and What's Cool 
+resizable Allow/Disallow the user to resize the window. 
+scrollbars  Enable the scrollbars if the document is bigger than the window  */
+
+
+}
+/*]]>*/
+</script>
+</head>
+<body>
+<p><a href="#" onClick=
+"doLink('You will go to Yahoo!', 'http://www.yahoo.com/');">Go to Yahoo!</a></p>
+
+<p><a href="#" onClick=
+"doLink('You will go to Adobe', 'http://www.macromedia.com/');">
+Go to Adobe</a></p>
+</body>
+</html>

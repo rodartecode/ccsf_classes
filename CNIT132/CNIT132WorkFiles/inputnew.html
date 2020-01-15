@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>New form tags</title>
+<meta charset="utf-8">
+<meta name="description" content="working with new form tags and some interesting attributes">
+<style>
+</style>
+</head>
+<body>
+
+<form action="#" method="get">
+<label for id="favcolor">Select background color: </label><input type="color" name="favcolor" id="favcolor">
+<br><br>
+<label for id="setdate">Date for arrival: </label><input type="date" name="setdate" id="setdate" min="2018-07-01">
+<br><br>
+<label for id="custemail">Email: </label><input type="email" name="custemail" id="custemail">
+<br><br>
+<label for id="file">Select image file: </label><input type="file" name="file" id="file">
+<br><br>
+<label for id="age">Age: </label><input type="number" name="age" id="age" min="18" max="65">
+<br><br>
+<label for id="eval">Evaluate Service: </label> Bad <input type="range" name="eval" id="eval" min="0" max="10">Good
+<br><br>
+<label for id="result">Result of survey: </label><textarea id="result" cols="35" rows="3" readonly>Results of the survey will be presented in this area for you as soon as we have them available</textarea>
+<br><br>
+<label for id="os">Operating System: </label><input type="text" name="os" id="os" placeholder="OS of your device here" disabled>
+</form>
+</body>
+</html>

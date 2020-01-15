@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Using the Return Keyword - Input Form for the numbers</title>
+<script type="text/javascript">
+//<![CDATA[
+function doCars(a, b) {
+ if (Number(a) && Number(b)) {
+ var myNumberOfToyotas = parseInt(a);  
+ var myNumberOfHondas = parseInt(b);
+ // var myNumberOfToyotas = 40;
+ // var myNumberOfHondas = 20;
+// parseFloat would be used to convert to numbers with decimals 
+ var myTotalNumberOfCars = addMe(myNumberOfToyotas, myNumberOfHondas);
+ var myMsg = "We have " + myTotalNumberOfCars + " cars in stock";
+ alert(myMsg);
+}
+ else {
+ alert("Please enter numeric values only!");
+}
+}
+
+function addMe(myFirstNum, mySecondNum) {
+ var myAnswer = myFirstNum + mySecondNum;
+ return myAnswer;
+}
+
+/*]]>*/
+</script>
+</head>
+<body>
+<form method="get" action="">
+<p>Number of Toyotas: <input type="text" id="toyota" /></p>
+<p>Number of Hondas: <input type="text" id="honda" /></p>
+<p><input type="button" value="Total Cars" onclick="doCars(toyota.value, honda.value);" /></p> 
+</form></p>
+</body>
+</html>

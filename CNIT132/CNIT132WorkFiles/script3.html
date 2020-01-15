@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Working with Functions in JavaScript</title>
+<script type="text/javascript">
+//<![CDATA[
+function doSomething() {
+ var first = 1;
+ alert(first);
+
+ doSomethingElse();
+}
+
+function doSomethingElse() {
+ alert("Are you ready?");
+}
+
+function doLink(message1, message2) {
+ message1 = "Hello everybody!";
+ alert(message1);
+ alert(message2);
+}
+/*]]>*/
+</script>
+</head>
+<body>
+<p>A simple JavaScript with 2 functions that will be activated as soon as you click on the button below</p>
+<form>
+<input type="button" value="Click Here" onclick="javascript:doSomething();" /> 
+</form>
+<p><a href="#" onClick="doLink('Gotcha', 'What about now?');">Calling the function doLink()</a></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Example using transform</title> 
+	
+<style type="text/css"> 
+   #outerspace { position: relative; height: 400px; background: #0c0440 url(outerspace.jpg); } 
+   div.rocket { position: absolute; bottom: 10px; left: 20px; 
+                -webkit-transition: all 3s ease-in; 
+                -moz-transition: all 3s ease-in; 
+                -o-transition: all 3s ease-in; 
+                -ms-transition: all 3s ease-in; 
+                transition: all 3s ease-in; } 
+   div.rocket img { -webkit-transition: all 2s ease-in-out; 
+                    -moz-transition: all 2s ease-in-out; 
+                    -o-transition: all 2s ease-in-out; 
+                    -ms-transition: all 2s ease-in-out; 
+                    transition: all 2s ease-in-out; } 
+   #outerspace:hover div.rocket { -webkit-transform: translate(540px,-200px); 
+                                  -moz-transform: translate(540px,-200px); 
+                                  -o-transform: translate(540px,-200px); 
+                                  -ms-transform: translate(540px,-200px); 
+                                  transition: all 2s ease-in-out; } 
+   #outerspace:hover div.rocket img { -webkit-transform: rotate(70deg); 
+                                      -moz-transform: rotate(70deg); 
+                                      -o-transform: rotate(70deg); 
+                                      -ms-transform: rotate(70deg); 
+                                      transform: rotate(70deg); } 
+</style>
+</head> 
+
+<body> 
+
+<div id="outerspace">
+<div class="rocket">
+<img src="rocket.gif" width="92" height="215" alt="rocket animation">
+
+</div>
+</div>
+
+</body>
+</html>

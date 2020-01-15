@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Galery of Images</title>
+<meta name="description" content="Sliding Gallery of images">
+<style type="text/css"> 
+#gallery {
+  padding:0; 
+  margin:0; 
+  list-style-type:none; 
+  overflow:hidden; 
+  width:320px; 
+  height:425px; 
+  border:1px solid #888; 
+  background:#fff url(windows/win_back.gif);
+  }
+#gallery li {
+  float:left;
+  }
+#gallery li a {
+  display:block; 
+  height:30px;
+  width:320px; 
+  float:left; 
+  text-decoration:none; 
+  border-bottom:1px solid #fff; 
+  cursor:default;
+  }
+#gallery li a img {
+  width:320px; 
+  height:30px; 
+  border:0;
+  }
+#gallery li a:hover {
+  background:#eee; 
+  height:239px;
+  }
+#gallery li a:hover img {
+  height:239px;
+  }
+</style>
+</head>
+<body>
+<p>Click the images and they will be shown in a sliding move</p>
+<ul id="gallery">
+<li><a href="#nogo">
+<img src="photo1.jpg" alt="#1" title="#1" /></a></li>
+<li><a href="#nogo">
+<img src="photo2.jpg" alt="#2" title="#2" /></a></li>
+<li><a href="#nogo">
+<img src="photo3.jpg" alt="#3" title="#3" /></a></li>
+<li><a href="#nogo">
+<img src="photo4.jpg" alt="#4" title="#4" /></a></li>
+<li><a href="#nogo">
+<img src="photo5.jpg" alt="#5" title="#5" /></a></li>
+<li><a href="#nogo">
+<img src="photo6.jpg" alt="#6" title="#6" /></a></li>
+</ul>
+</body>
+</html>

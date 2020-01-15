@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form using external PHP</title>
+<style type="text/css">
+	h3 {color:#FF0000; font-type:italic; text-align:center;}
+</style>
+<script type="text/javascript">
+  <!-- <![CDATA[
+function validateForm()
+{
+   if (document.forms['badword'].Name.value == "" )
+      {alert("You need to type your Name.");
+        return false;
+   } // end if
+   if (document.forms['badword'].DirtyWord.value == "" )
+      {alert("You need to type your Favorite Dirty Word.");
+        return false;
+   } // end if
+   
+   return true;
+      
+} // end function validateForm
+
+// ]]> -->
+</script>
+</head>
+<body> 
+
+ <h3>Example using external PHP in a form</h3>
+
+ <form action="bad_words.php" method="post" name="badword" id="badword" onsubmit="return validateForm( );"> 
+
+ <p>My name is:
+ <br /> <input type="text" name="Name"> </p>
+
+ <p>My favorite dirty word is: 
+ <br /><input type="text" name="DirtyWord"></p> 
+ 
+
+ <input type="submit" name="submit" value="Click Here">
+ </form>
+
+</body>
+</html>

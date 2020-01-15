@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<meta charset="utf-8">
+<meta name="description" content="working with CSS variables">
+<title>CSS Variables</title>
+<style>
+ .normal {
+  padding: 2rem 4rem;
+  border: 2px solid var(--color, black);
+  background: transparent;
+  font-size: 1.2em;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.normal:hover {
+  cursor: pointer;
+  background: var(--color, black);
+  color: white;
+}
+
+/* variations */
+
+.normal.red {
+  --color: red
+}
+.normal.cyan {
+  --color: cyan
+}
+.normal.fuchsia {
+  --color: fuchsia
+}
+ </style>
+ <body>
+<button class="normal">CSS Variables</button>
+<button class="normal red">CSS Variables</button>
+<button class="normal cyan">CSS Variables</button>
+<button class="normal fuchsia">CSS Variables</button>
+</body>
+</html>
