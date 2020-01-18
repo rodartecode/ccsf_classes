@@ -1,0 +1,35 @@
+
+
+It's always seemed to me that the hard thing about data, especially
+in the increasingly digital world that we live, is that it's 
+entirely intrinsic to any behavior or activity we could do. There
+is no way to hide your data in a moment because it's part of it's
+very existence. The only way not to share data in many contexts,
+is to not exist in that context.
+
+This means that to use any service we are willingly allowing our
+data to be collected. With this in mind, it's important to 
+maintain some control over the appropriate use of our data. Using
+these guidelines is a firm step in the right direction.
+
+Uniquely identifiable data about a user should never be collected
+without a User's consent, and any usage of the data be made VERY
+explicit to the User.
+
+Identifiable data about a User's daily habits outside of the
+software product should never be collected. User's must trust
+that any data collected by a Software Product be explicitly 
+pertinent to that product.
+
+Any and all Anonymized data about a User must be made explicit
+to the User.
+
+User's should be able to access any and all Identifiable data 
+collected about them by a product.
+
+User's must have a Right to be Forgotten and request that any
+identifiable data collected about them be deleted from all
+related servers/databases.
+
+These are just a few of the most important guidelines for 
+maintaining ethical and desirable usage of a User's data.

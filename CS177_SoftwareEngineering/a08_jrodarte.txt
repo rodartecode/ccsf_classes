@@ -1,0 +1,65 @@
+After months, or maybe years, of working on a
+software product, it is extremely important to know
+that your product functions correctly. The Quality
+Assurance team is responsible for testing the 
+software and finding any problems in the software
+so that they may be fixed before the product is 
+released, or as soon as possible otherwise.
+
+The QA team needs to make sure the software meets
+any requirements that were used for development. QA
+also tests the robustness of its system, making 
+sure that it will respond correctly to all forms of
+input without crashing and in a reasonable amount 
+of time. They also test that it runs correctly in 
+all the different platforms and configurations that
+it is supposed to.
+
+A lot of time, this means writing a lot of tests
+that can be run automatically. These tests feed
+input to the software and measure its responses. It
+also logs any errors or unexpected behavior. Any 
+errors will be tracked and sent to the development
+team for fixing.
+
+Some of these tests will measure performance under
+severe load, others will feed the software 
+gibberish impossible input to ensure it can handle
+these errors appropriately. If the program crashes
+or becomes unresponsive than it is logged as well
+as the conditions in place leading up to the 
+malfunction.
+
+Other tests include unit tests, which will target
+specific functions and put them through as many 
+possible use cases to ensure the function will
+behave as expected and throw the correct errors
+when it doesn't. In systems with limited 
+functionality this can be done without too much
+trouble, but on a large complicated system with
+more open-ended use cases, testing all the 
+functionality can prove to be impossible. In
+these cases you only test the most important 
+functionality.
+
+Although these tests can catch a lot of bugs, they
+can't really test for more intangible requirements 
+like usability, or aesthetic quality. In these 
+cases its good to have some humans test the
+software out, and note any difficulties they 
+encountered, or confusion about how the software
+functions. These tests can range from hallway 
+usablity tests, to more formal A/B test groups and
+focus groups.
+
+Security tests are also run. Although some of them
+can be automated, it can also be useful to have a 
+knowledgable person try to expose weaknesses in
+the security features using methods that can not
+be reliably automated.
+
+There is a ton of different features and
+functions that need to be tested and the 
+methods to test them is much too broad for this 
+essay, but these are only a few of the problems
+and solutions that QA departments must face.

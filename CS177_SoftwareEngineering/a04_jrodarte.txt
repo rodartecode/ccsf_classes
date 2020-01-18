@@ -1,0 +1,495 @@
+ ____ ____ ____ ____ ____
+||T |||a |||b |||l |||e ||
+||__|||__|||__|||__|||__||
+|____|____|____|____|____|____ ____
+||F |||r |||i |||e |||n |||d |||s ||
+||__|||__|||__|||__|||__|||__|||__||
+|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+
+TableFriends
+Functional Specification
+
+By
+J. Elephant
+
+Version 0.2.2
+Updated: 09/23/2018
+
+
+- - C O N F I D E N T I A L - -
+
+
+
+
+=====
+Table of Contents
+=====
+
+Each section contains a 3 character code to
+more easily jump to different parts of the
+document.
+
+
+[OV1] Overview
+[OV2] - User Stories
+[OV3] - Risks and Assumptions
+[OV4] - Non-Goals
+
+[UX1] User Experience
+[UX2] - Welcome Screen
+[UX3] - Registration
+[UX4] - Log-in
+[UX5] - Profile
+[UX6] - Friends
+[UX7] - Activity Feed
+
+[GA1] Games
+[GA2] - Lobbies
+[GA3]   - Unranked
+[GA4]   - Ranked
+[GA5] - Acheivements
+[GA6] - Tournaments
+
+[EV1] Events
+[EV2] - Online Events
+[EV3] - Offline Events
+[EV4] - Official Events
+
+[ST1] Streaming
+[ST2] - Followers
+[ST3] - Events
+
+[GE1] General Features
+[GE2] - Security
+[GE3] - Statistics
+
+[FL1] Flowcharts
+
+[TO1] To-Do
+
+
+~~~~~~~~~~
+
+=====
+Overview [OV1]
+=====
+
+TableFriends is an online social network specifically
+tailored to board and table game fans, combining features
+of contemporary social networks (Like friends, news feeds,
+and profiles) with those of popular webgame portals (such 
+as many genres of games, private and public lobbies, and 
+matchmaking ranking systems to group players of similar 
+skill together).
+
+This is an INCOMPLETE document in both content and 
+formatting. Details are subject to change as the product 
+is developed and scope is better defined.
+
+
+=====
+User Stories [OV2]
+=====
+
+The following are a few fictiotious scenarios to show 
+how a hypothetical user might interact and use 
+TableFriends on a typical basis.
+
+
+SCENARIO 1: Guadalupe
+Guadalupe is a 20 year old college student. When Guadalupe
+was still in high school they would frequently play card
+games with friends after school. Unfortunately they have
+all moved away to different colleges and no longer keep in
+touch. Guadalupe hears about a really good website where
+you can play card games online with your friends. They
+search for the site's memorable name in their search 
+browser and proceed to register a new  account.
+
+The registration process is quick and easy and are quickly
+taken to their new profile. Guadalupe becomes excited and 
+decides to invite all their old friends to join as well!
+They add each other as friends and within minutes are 
+playing a card game together again.
+
+Now Lupe and their friends have a weekly hang out again,
+where they play their old favorites like War and Speed, 
+and catch up about their lives at their new schools.
+
+
+SCENARIO 2: Ariel
+Ariel is passionate table gamer. Although they grew up
+playing Chess, they quickly discovered a passion for
+other competetive games. Ariel began competing in more
+tournaments for games like Magic, Scrabble, and Diplomacy.
+
+Now they are a very active TableFriends user who
+participates and often wins online tournaments. They
+have a very large friends list including real life 
+friends and new friends they met through playing in
+online matchmade games.
+
+
+SCENARIO 3: Rene
+... incomplete.
+
+
+=====
+Risks and Assumptions [OV3]
+=====
+
+There will need to be careful consideration for
+agreements made with game publishers over how the
+games are used. This will especially be a problem
+for the newer boutique games, which we expect to 
+be popular with our user base.
+
+Additionally the anti-cheat systems should be very
+robust, espeically since they're going to be used 
+in prize awarding tournaments.
+
+=====
+Non-Goals
+=====
+
+This version of the site will not be truly cross
+platform. Friends list, activity feed, and access
+to messages will be available, although in a
+limited format.
+
+Games will NOT be available on mobile devices for
+this version of the site.
+
+
+
+~~~~~~~~~~
+
+=====
+User Experience [UX1]
+=====
+
+This section will detail the various sections of
+the site available to users and how they will 
+interact with them.
+
+All webpage elements will be made in HTML5,
+but the exact implementations of the games
+themselves is still to be decided.
+
+
+=====
+Welcome Screen [UX2]
+=====
+
+When users first open the site they will be
+greeted by a small, simple splash screen showing
+the TableFriends logo, a couple of small blurbs,
+and a prompt to sign-in or register a new account.
+
+The prompt will have a single field to enter the
+user's email, with a choice to either "Register"
+or "Log-in". When they make the choice they will
+be forwarded to the respective page.
+
+=====
+Registration [UX3]
+=====
+
+Users will be shown a series of fields with
+general acount information. They must have 
+a valid e-mail which they will have to verify,
+and a valid password which meets the minimum
+password strength requirements. They will also
+have to confirm their date of birth to ensure 
+they're old enough to use the site.
+
+There will be additional optional fields where
+they can specify their location, gender,
+favorite games, and other biographical info.
+After they've filled out the registration form,
+the user will be sent an e-mail cotaining a 
+URL link for them to click which will verify
+their e-mail.
+
+Once the e-mail address has been verified they
+will be forwarded back to the Welcome Screen
+where they will now be able to log in.
+
+
+=====
+Log-in [UX4]
+=====
+
+To log-in each user will need to enter the 
+password associated with their account. If
+the password is succesful they will be
+forwarded to their Activity Feed.
+
+=====
+Profile [UX5]
+=====
+
+The User's Profile contains all their info,
+inlcuding biographical information, profile
+picture, recently played, and any trophies
+or acheivements that they're received from
+playing in online games.
+
+=====
+Friends [UX6]
+=====
+
+The User's Friends List will have a list of
+all the other user's who they've added as
+friends.
+
+Users will be able to add each other by going
+to another user's profile and clicking the 
+big "Add Friend" button. Once the other user
+has confirmed they will both appear in each
+others' friends list.
+
+Friends can send each other invites to games,
+receive alerts when other friends are playing
+a game, and send each other private messages.
+
+
+=====
+Activity Feed [UX7]
+=====
+
+The Activity Feed is the user's home base. 
+This is where they will be taken to everytime
+they log-in. 
+
+The main feed takes up most of the center of 
+the screen. It will show a chronological list
+of recent posts by friends, games played, 
+acheivements and trophies earned, and so on.
+
+Also accessible from this screen will be a 
+toolbar which will contain links to pages
+like their Friends List, their inbox,
+and the game portal from which they will
+be able to join or host game sessions.
+
+
+
+~~~~~~~~~~
+
+=====
+Games [GA1]
+=====
+
+Games featured include: 
+  - Standard "classic" games such as Chess and Checkers
+  - Tradiational "card games" like Poker, Hearts, and 
+    War
+  - Contemporary "craft" board games like Ticket To
+    Ride, and Settlers of Catan
+  - Abstract "role playing" table games, like Shadowrun
+    and GURPS.
+  NOTE: No rights have been secured, game list is NOT
+        final
+
+
+=====
+Lobbies [GA2]
+=====
+
+Games will be hosted in lobbies made by other Users
+or in certain circumstances by official admins.
+
+Lobbies can either be open for anybody to join,
+or can be protected by password or friends only
+limitations. 
+
+=====
+Unranked Lobbies [GA3]
+=====
+
+Unranked lobbies are lobbies where there is no 
+player ratings. Any user is able to join 
+regardless of skill level. These lobbies
+can be either open (public) or password 
+protected (private).
+
+
+=====
+Ranked Lobbies [GA4]
+=====
+
+Ranked lobbies are match-made by the server-side
+game coordinator. Once a user decides to join a
+Ranked Lobby, they will be put in a queue until 
+they can be matched up with a similarly skilled
+player (or group of players).
+
+Depending on the results, the winner(s) will be
+awwarded a certain amount of Ranking Points and
+will be matched with high skilled players in 
+future match-made sessions. The inverse will be
+true for the loser(s).
+
+=====
+Acheivements [GA5]
+=====
+
+Every game will have a list of acheivements that
+users can earn through playing the games. Once
+a user unlocks an acheivement they will be awarded
+a digital badge, which they can then display in 
+their profile.
+
+
+=====
+Tournaments [GA6]
+=====
+
+Tournaments are a series of games hosted by 
+TableFriends where large groups of users
+can compete against each other over a few hours.
+
+Tournaments may feature prizes, including digital
+trophies which users can display on their profiles.
+
+
+
+~~~~~~~~~~
+
+=====
+Events [EV1]
+=====
+
+Users will be able to create Events, where they
+can invite friends to play together on a specific
+date and time. Users will have a calendar where 
+they can see what events they're hosting and/or
+are invited to.
+
+=====
+Online Events [EV2]
+=====
+
+... incomplete.
+
+=====
+Offline Events [EV3]
+=====
+
+... incomplete.
+
+=====
+Official Events [EV4]
+=====
+
+... incomplete.
+
+
+
+~~~~~~~~~~
+
+=====
+Streaming [ST1]
+=====
+
+Users will be able to stream game sessions
+which other users will be able to watch.
+Streams will have a chat box that anybody 
+watching will be able to chat in.
+
+Users can be notified whenever one of their
+friends is streaming, or any other user that
+they can choose to follow.
+
+=====
+Followers [ST1]
+=====
+
+... incomplete.
+
+
+=====
+Official Events [ST1]
+=====
+
+... incomplete.
+
+
+
+~~~~~~~~~~
+
+=====
+General Features [GE1]
+=====
+
+This section deals with more general features
+about how the web site will be structured, as
+well as discussing system requirements and 
+non-functional requirements.
+
+=====
+Security
+=====
+
+This section will deal with how User Private
+Information will be encrypted and stored. It
+will also  discuss measures taken to prevent
+cheating, exploiting, and other abuse stemming
+from the ranked game lobbies.
+
+... incomplete.
+
+
+=====
+Statistics
+=====
+
+Statitistics will be collected for a variety
+of different usage values. 
+
+All of these statistics will be quite 
+generalized, like average playerbase demographics, 
+and average user playtime for different games. 
+
+These will be used to plan future features and
+all major version revisions.
+
+
+
+
+~~~~~~~~~~
+
+=====
+Flow Charts[FL1]
+=====
+
+This section will be ammended with links to
+online versions of the User Experience 
+flowcharts, which will give a visual
+roadmap to how a user will navigate this
+site.
+
+... incomplete.
+
+
+
+~~~~~~~~~~
+
+=====
+To-Do [TO1]
+=====
+
+This section contains a list of the next tasks
+to be completed for to finish this document.
+
+- All sections need much more detailed content.
+- The formatting can be improved to help the 
+  different sections be more easily 
+  distinguished.
+- Add all the rest of the things I haven't done
+  to this list
+- I'm sure I'm missing something else, but this 
+  is probably good enough for today.
+

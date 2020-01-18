@@ -1,0 +1,38 @@
+Write 200-400 words describing your experience 
+cloning a GitHub project of your choice on hills, 
+then making some edit to the repository and 
+asking git to display the diff.
+
+
+Working with a version control system will be
+a vital skill to learn if you plan on working
+on teams in a development environment. Since
+git has become the defacto standard of the 
+industry its important gain familiarity using
+these tools. I have used git in a very basic
+manner to put some of my previous assignments
+from other classes on github, so already had
+some passing familiarity with the workflow of
+using git.
+
+Still, I very much appreciate that git is not
+a very user friendly tool to use. Being a 
+command line program, it can be hard to
+visualize just that exactly is happening when
+you're creating and modifying these repos. I
+know that there are some 3rd party tools as 
+well as integrated tools that help present
+the information about your repos in a much
+more easily readable file. Still, I'm going
+to do my best to get more comfortable in the
+command line. Plus it does feel way cooler 
+when you do it that way.
+
+Personally, I had to try a few times to clone
+one of my repos from github onto hills. I did
+eventually get it though, and played around a
+bit checking the log, adding and removing files,
+and checking the diff. I look forward to
+learning more about git, and maybe I'll even get
+into that Version Control class that's starting
+soon.

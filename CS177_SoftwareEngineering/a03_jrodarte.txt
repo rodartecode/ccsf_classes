@@ -1,0 +1,82 @@
+Write prioritized requirements for a new social network.
+
+
+TableFriends - A Social Network for board game fans to play board games 
+online, as well as plan and find meet-ups to play board games with others 
+in person.
+
+REQUIREMENTS
+
+Mandatory
+1. Users shall be able to register an account, which they'll use to log-in.
+2. User credintials shall meet following guidelines:
+  a. Valid e-mail address that is confirmed with a verification link.
+  b. Password is 8 characters, with at least one number, one lowercase
+     letter, and one uppercase letter.
+  c. Users must confirm they are 18 years old, by clicking a button.
+3. If a user it not logged in they shall be prompted to sign in.
+4. If a user is properly authenticated and logs-in successfully they
+   will be presented with a chronological timeline of recent games, posts
+   and acheivements won by other
+5. Users shall each have a profile that they can edit which will include:
+  a. Case-insensitive unique user-id
+  b. Optional Name
+  c. Optional Age
+  d. Optional Location
+  e. Profile Picture
+  f. Favorite Board Game
+6. User shall be able to find other users by searching for user-ids.
+7. Users can request to be friends, which when confirmed, adds both users
+   to each others' friends list.
+8. Users shall be able to host a web-player session of any of the boardgames
+   available on the site.
+9. Users shall be able to invite from friends from their friends list, or 
+   optionally be paired with strangers.
+10.Users shall be able to see games their friend's are hosting, or optionally
+   can view public games hosted by strangers, or join a random public 
+   session of a certain game.
+11.The system shall launch with support for a number of "classic" games
+   such as chess and checkers, as well as a few card games such as speed, 
+   war, bullshit, and poker.
+12.The Games shall be hosted on the web browser and shall meet the following
+   requirements:
+  a. The games must load within 10 seconds on 98% of users' systems and 
+     web connection
+  b. The memory load shall stay below 250 Megabytes
+
+
+Should(High Priority)
+1. Users should be able to host social events that they can invite their
+   friends to.
+2. Upon receiving an invitation users should be able to respond with a yes,
+   no, or maybe.
+3. Social Events should have a title, date and time, and optional location.
+4. Social Events should have a discussion boards for invited user's to 
+   discuss the event.
+5. Social Events can be for in person meet-ups to play, or an online
+   hosted session.
+6. The system should be continuously optimized to bring memory-load down
+   as well as improve load-times.
+
+Could(Medium Priority)
+1. Users could unlock acheivements from playing games which can optionally
+   be displayed on a user's profile.
+2. The System could be periodically updated to add new games.
+3. There could be hosted tournaments that are scheduled, with many users
+   playing together at a specified date and time.
+4. There could be streaming support for people who would rather watch others
+   play.
+5. Streams could have chat room support.
+6. Premium board games from contemporary companies could be added.
+7. Users could buy the board games to play them or pay for a subscription
+   service that includes many "Premium" games.
+
+Would(Low Priority)
+1. The service could one day host live tournaments that could be broadcast
+   on the website.
+2. There could be an optional 'premium currency' that users could use to
+   purchase premium games or cosmetics for their profiles.
+3. There could be a learning section with tutorials and guides to different
+   games on the site.
+
+

@@ -1,0 +1,32 @@
+"Identify and describe a very expensive failure in software 
+engineering, such as E.T. The Extra-Terrestrial Atari game."
+
+It's a memory that will stay with me, probably for the rest of my life. At
+exactly midnight January 1, 2000, my uncle turned off the light and TV as we
+were all gathered in my grandmother's living room. There was a moment of 
+panic (being just 8 years old, I was very worried about what was going to 
+happen), followed by laughter and relief.
+
+In the months leading up the New Year's Day 2000 there was considerable 
+hand-wringing and speculating about "massive computer outages" bringing
+down systems across the world. My family, and everybody in my extended
+family, had stocked up on canned food and big barrels full of water.
+
+The "Y2K Bug" had been known about for years, but it wasn't until the late
+90s that it was brought to the world's mainstream attention. Corporations
+and governments across the world scrambled to update their software and
+put in place contingency plans in case of widespread system failures.
+
+In the end, the previous generations' constraints of fitting data into the
+smallest amount of bits and bytes possible compounded so much that the 
+total cost of work done to prepare for the new millenium soared to 
+over $400 Billion(in today's money). All over 2 digits.
+
+The "Y2K Bug" didn't bring down power grids or municipal governments, 
+although its said that a few trains were off schedule for a few days. Some
+say its thanks to the work leading up in preparation, although others believe
+the problem was overblown and it would've been cheaper to fix issues as they
+popped up instead.
+
+Regardless, its an interesting case of how a small problem in the design of 
+systems can have very expensive consequences, even decades down the line.

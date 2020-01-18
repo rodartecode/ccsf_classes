@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!------------------------
+            Jesse E Rodarte
+            04/16/19
+            CNIT 131
+            Assignment 9:
+            Responsive Page with a Table
+        -------------------------->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<style>
+			img {
+				max-width: 200px;
+				height: auto;
+			}
+			table,
+			th,
+			td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			table.center {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h1 {
+				text-align: center;
+			}
+
+			@media only screen and (max-width: 600px) {
+				body {
+					background-color: aquamarine;
+				}
+			}
+
+			@media only screen and (min-width: 601px) {
+				body {
+					background-color: chartreuse;
+				}
+			}
+
+			@media only screen and (min-width: 1024px) {
+				body {
+					background-color: rosybrown;
+				}
+			}
+		</style>
+		<title>Responsive webpage with a Table</title>
+	</head>
+	<body>
+		<header><h1>Jesse's (not) first table!</h1></header>
+
+		<section>
+			<table class="center">
+				<thead>
+					<tr>
+						<th>Chess Piece</th>
+						<th>Movement</th>
+						<th>
+							Picture
+							<figcaption>
+								Images FREE from <a href="https://www.pexels.com">Pexels</a>
+							</figcaption>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="background-color: whitesmoke">Knight</td>
+						<td>
+							<ul>
+								<li>Can only move in L-shape</li>
+							</ul>
+						</td>
+						<td><img src="images/knight.jpg" /></td>
+					</tr>
+					<tr>
+						<td style="background-color: azure">Pawn</td>
+						<td>
+							<ul>
+								<li>
+									Can only move 1 space forward, or 2 spaces forward if it hasn't moved yet
+								</li>
+								<li>
+									Can only capture one space diagonally forward
+								</li>
+							</ul>
+						</td>
+						<td><img src="images/pawn.jpg" /></td>
+					</tr>
+					<tr>
+						<td style="background-color: antiquewhite">Rook</td>
+						<td>
+							<ul>
+								<li>Can move along any unobstructed column or file</li>
+							</ul>
+						</td>
+						<td><img src="images/rook.jpg" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<footer style="text-align: center">
+			<p style="color: #333999"><em>thanks for visiting!</em></p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+Methodological Strategy for Collaborative Software Project
+Fall 2018
+By J. Elephant
+
+In order to function as a team and make a cohesive piece of 
+software, it very important that our methodology for our workflow 
+is very clear. Compromises will certainly have to be made, but
+this is the methodology that I propose and I believe to be most 
+valuable, given the scale of our project.
+
+Top of the list, in order to better facilitate easy and clear
+collaboration, would be using a version control system. The exact
+VCS we use isn't very important. What's most important is that
+the whole team is always working on the same files and that we're
+all on the same page.
+
+Another important method to use is tracking bugs and issues in the
+software. We must have a system to track any problems or 
+inconsistencies in our software, and work to resolve them as soon
+as possible. The system should also have some sort of 
+prioritization functionality in place, to measure the importance
+or severity of different bugs. 
+
+I personally highly value having a specification. A spec will
+contribute to the team's collaboration by having one central
+document that describes exactly what our program is supposed to do.
+
+Of slightly lesser importance to our project, but still something
+that should be considered and discussed is the scheduling of our
+work. Although this will not be a very accurate metric (most 
+likely) it will still be important to get an idea of who's going
+to be working on what, and what features we anticipate to be most
+time-consuming.
+
+I also believe we should do some due diligence in having at least a
+few usability testers. Users will certainly try to use the program
+in different ways and it's important to be able to see where we fall
+short of a user's expectations of the program's functionality, and
+where we have done well and presented the user with clear data that
+is easy for them to understand and navigate.
+
+By following as many of these methodologies as we can, I believe we
+will be on the right path to creating something that is easy to 
+implement, is useful(or at least entertaining) to the user, and 
+easy to use.
