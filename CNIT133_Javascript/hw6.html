@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Homework 6" />
+		<link rel="stylesheet" href="default.css" />
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+			$("document").ready(function() {
+				console.log("doing it I think");
+				$(".search").mask("A");
+				$("#phone").mask("(999) 999-9999");
+				console.log("done??");
+			});
+		</script>
+		<style>
+			#result {
+				color: antiquewhite;
+			}
+			input[type="number"]::-webkit-inner-spin-button,
+			input[type="number"]::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+			#search {
+				width: 5rem;
+			}
+			#phoneResult {
+				margin: 0;
+				display: inline;
+			}
+			#phoneResult input[type="number"] {
+				width: auto;
+			}
+			#phoneResult #area {
+				width: 10rem;
+			}
+			#sevenNum {
+				width: auto;
+			}
+		</style>
+		<meta name="description" content="Homework 6: Objects" />
+		<link rel="stylesheet" href="default.css" />
+		<title>Homework 6</title>
+	</head>
+
+	<body onload="initialize()">
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="index.html">Return to Index</a></li>
+			</ul>
+		</nav>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Part 1</a></li>
+				<li><a href="#tabs-2">Part 2</a></li>
+				<li><a href="#tabs-3">Part 3</a></li>
+			</ul>
+			<div id="tabs-1">
+				<section class="center-box">
+					<form action="javascript:void(0);">
+						<label for="num">Enter a number with 4 decimal points: </label>
+						<input type="number" placeholder="1.1111" step="0.00000000001" id="num" />
+						<br />
+						<input type="submit" onclick="valNum()" />
+						<input type="reset" />
+					</form>
+					<br />
+					<textarea
+						id="textResult"
+						style="display: inline; margin-left: auto; margin-right: auto; resize: none; overflow: auto;"
+						readonly
+					>
+					</textarea>
+				</section>
+			</div>
+			<div id="tabs-2">
+				<section class="center-box">
+					<h1>Search a string!</h1>
+					<form action="javascript:void(0);">
+						<label for="text-box">Enter some text:</label>
+						<textarea
+							rows="5"
+							cols="50"
+							name="text-box"
+							id="text-box"
+							placeholder="Enter some text here!"
+							style="color:black;"
+						></textarea>
+						<label for="search">Enter a text character to search for:</label>
+						<input type="text" id="search" class="search" size="2" />
+						<br />
+						<input type="submit" onclick="searchText()" />
+						<input type="reset" /> <br />
+						<br />
+						<textarea
+							rows="2"
+							cols="50"
+							name="result-box"
+							id="result-box"
+							placeholder="This will display the search results"
+							style="color:black;"
+							readonly
+						></textarea>
+					</form>
+				</section>
+			</div>
+			<div id="tabs-3">
+				<section class="center-box">
+					<article>
+						<h2>Today's date:</h2>
+						<p id="today"></p>
+						<h2>Time-zone differences:</h2>
+						<p id="timezones"></p>
+					</article>
+					<article>
+						<h2>Phone number</h2>
+						<form action="javascript:void(0);">
+							<label for="phone">Enter a number:</label>
+							<input type="text" name="phone" id="phone" /> <br />
+							<input type="submit" value="Submit" onclick="splitString()" />
+							<input type="reset" value="Reset" /> <br />
+							<br />
+							<div id="phoneResult">
+								<input type="text" name="area" id="area" size="4" readonly />
+								<input type="text" name="sevenNum" id="sevenNum" size="10" readonly />
+							</div>
+						</form>
+					</article>
+				</section>
+			</div>
+		</div>
+		<script src="hw6/hw6.js"></script>
+	</body>
+</html>

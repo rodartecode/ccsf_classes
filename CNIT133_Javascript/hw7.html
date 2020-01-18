@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+			$(document).ready(function() {
+				$(".answer").hide();
+				$(".main h2").click(function() {
+					// Save the h2 element that was clicked
+					// as well as the following answer element.
+					var h2 = $(this);
+					var answer = h2.next(".answer");
+
+					if (answer.css("display") == "none") {
+						// If the answer is currently not displayed,
+						// display it with a sliding down motion,
+						// and when done, add the "close" class to the h2 element.
+						answer.slideDown(function() {
+							h2.addClass("close");
+						});
+					} else {
+						// Otherwise, fade the answer out, and when done,
+						// remove the "close" class from the h2 element.
+						answer.fadeOut(function() {
+							h2.removeClass("close");
+						});
+					}
+				}); //end click
+				$("ul.dropdown li").hover(
+					function() {
+						console.log("hover");
+						$(this).addClass("hover");
+						$("ul:first", this).css("visibility", "visible");
+					},
+					function() {
+						console.log("unhover");
+						$(this).removeClass("hover");
+						$("ul:first", this).css("visibility", "hidden");
+					}
+				);
+
+				$("ul.dropdown li us li:has(ul)")
+					.find("A:first")
+					.append(" &raquo; ");
+			}); // end ready
+			function initialize() {
+				let doc = document.getElementById("change-it");
+				let rad = document.StyleForm.radio;
+				for (let i = 0; i < rad.length; i++) {
+					rad[i].addEventListener("change", function() {
+						switch (this.value) {
+							case "Radio 1":
+								doc.style.color = "#333333";
+								break;
+							case "Radio 2":
+								doc.style.color = "#0000cc";
+								break;
+							case "Radio 3":
+								doc.style.color = "#660000";
+								break;
+							default:
+								break;
+						}
+					});
+				}
+			}
+
+			function bolden() {
+				let doc = document.getElementById("change-it");
+				if (document.getElementById("bold").checked == true) {
+					doc.style.fontWeight = "bolder";
+				} else {
+					doc.style.fontWeight = "normal";
+				}
+			}
+
+			function italicize() {
+				let doc = document.getElementById("change-it");
+				if (document.getElementById("italic").checked == true) {
+					doc.style.fontStyle = "italic";
+				} else {
+					doc.style.fontStyle = "normal";
+				}
+			}
+
+			function underliner() {
+				let doc = document.getElementById("change-it");
+				if (document.getElementById("underline").checked == true) {
+					doc.style.textDecoration = "underline";
+				} else {
+					doc.style.textDecoration = "none";
+				}
+			}
+
+			function fontChanger() {
+				let doc = document.getElementById("change-it");
+				let select = document.StyleForm.select.selectedIndex;
+				console.log(select);
+				switch (select) {
+					case 0:
+						console.log(0);
+						doc.className = "sans-serif";
+						break;
+					case 1:
+						console.log(1);
+						doc.className = "serif";
+						break;
+					case 2:
+						console.log(2);
+						doc.className = "monospace";
+						break;
+					default:
+						break;
+				}
+			}
+
+			function changeBackground() {
+				let doc = document.getElementById("change-it");
+				doc.style.backgroundColor = "#9f6";
+			}
+
+			function resetTabs() {
+				let doc = document.getElementById("change-it");
+				doc.style.backgroundColor = "#ffffff";
+			}
+
+			function goTab1() {
+				$("#tabs").tabs("option", "active", 1);
+			}
+
+			function goTab2() {
+				$("#tabs").tabs("option", "active", 2);
+			}
+
+			function goTab3() {
+				$("#tabs").tabs("option", "active", 3);
+			}
+		</script>
+		<style>
+			h2 {
+				background: url(hw7/open.png) no-repeat 0 11px;
+				padding: 10px 0 0 25px;
+				cursor: pointer;
+			}
+			h2.close {
+				background-image: url(hw7/close.png);
+			}
+			.answer {
+				margin-left: 25px;
+			}
+			#result {
+				color: antiquewhite;
+			}
+			.image-gallery {
+				width: 80rem;
+				margin: 0rem auto;
+			}
+
+			.image-gallery img {
+				width: 40%;
+				margin: 10px;
+			}
+			ul.dropdown {
+				position: relative;
+				overflow: visible;
+			}
+			ul.dropdown li {
+				font-weight: bold;
+				float: left;
+				zoom: 1;
+				background: #aaa;
+			}
+			ul.dropdown a:hover {
+				color: #000;
+			}
+			ul.dropdown a:active {
+				color: #999;
+			}
+			ul.dropdown li a {
+				display: block;
+				padding: 4px 8px;
+				border-right: 1px solid #333;
+				color: #333;
+			}
+			ul.dropdown li:last-child a {
+				border-right: none;
+			}
+			ul.dropdown li.hover,
+			ul.dropdown li:hover {
+				background: #999;
+				color: #333;
+				position: relative;
+			}
+			ul.dropdown li.hover a {
+				color: #666;
+			}
+			a {
+				text-decoration: none;
+			}
+			ul {
+				list-style: none;
+			}
+			ul.dropdown ul {
+				width: 220px;
+				visibility: hidden;
+				position: absolute;
+				top: 100%;
+				left: 0;
+			}
+			ul.dropdown ul li {
+				font-weight: normal;
+				background: #f6f6f6;
+				color: #000;
+				border-bottom: 1px solid #666;
+				float: none;
+			}
+			li {
+				margin: 0 !important;
+			}
+			ul ul {
+				margin: 0 !important;
+			}
+			#change-it.serif {
+				font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+			}
+
+			#change-it.monospace {
+				font-family: "Courier New", Courier, monospace;
+			}
+			#change-it.sans-serif {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+		<meta
+			name="description"
+			content="Homework 7: Object Model and Miscellaneous jQuery"
+		/>
+		<link rel="stylesheet" href="default.css" />
+		<title>Homework 7</title>
+	</head>
+
+	<body onload="initialize()">
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="index.html">Return to Index</a></li>
+			</ul>
+		</nav>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-0">Cover Page</a></li>
+				<li><a href="#tabs-1">Part 1</a></li>
+				<li><a href="#tabs-2">Part 2</a></li>
+				<li><a href="#tabs-3">Part 3</a></li>
+			</ul>
+			<div id="tabs-0">
+				<div class="main">
+					<h1>Homework 7: Object Model and Miscellaneous jQuery</h1>
+					<h2>Part 1</h2>
+					<div class="answer">
+						<p>Users can choose layout and formatting through form elements.</p>
+						<h4><a href="javascript:goTab1();">Click here!</a></h4>
+					</div>
+					<h2>Part 2</h2>
+					<div class="answer">
+						<p>Navigation bar with dropdown lists for each part of homeworks 2-6</p>
+						<h4><a href="javascript:goTab2();">Click here!</a></h4>
+					</div>
+					<h2>Part 3</h2>
+					<div class="answer">
+						<p>Photo slideshow using FancyBox</p>
+						<h4><a href="javascript:goTab3();">Click here!</a></h4>
+					</div>
+				</div>
+			</div>
+			<div id="tabs-1">
+				<section id="change-it">
+					<form action="javascript:void(0);" name="StyleForm">
+						<label for="black">Font Color: </label>
+						<input type="radio" name="radio" id="black" value="Radio 1" checked />
+						Black <br />
+						<input type="radio" name="radio" id="blue" value="Radio 2" /> Blue <br />
+						<input type="radio" name="radio" id="blood" value="Radio 3" /> Blood <br />
+						<label for="bold">Font Style: </label>
+						<input type="checkbox" name="check" id="bold" onclick="bolden()" /> Bold <br />
+						<input type="checkbox" name="check" id="italic" onclick="italicize()" /> Italic
+						<br />
+						<input type="checkbox" name="check" id="underline" onclick="underliner()" />
+						Underline <br />
+						<label for="select">Font Family: </label>
+						<select name="select" id="select" onchange="fontChanger()">
+							<option value="Sans-serif">Sans-serif</option>
+							<option value="Serif">Serif</option>
+							<option value="Monospace">Monospace</option>
+						</select>
+						<h3>Background Color:</h3>
+						<button onclick="changeBackground()">Change it!</button>
+						<button onclick="resetTabs()">Reset</button>
+					</form>
+				</section>
+			</div>
+			<div id="tabs-2">
+				<section
+					style="width: 100%; height: 100%; background-color: #fff; padding-bottom: 20rem;"
+				>
+					<nav>
+						<ul class="dropdown navbar">
+							<li class="nav-item">
+								<a href="index.html">Homework 1</a>
+							</li>
+							<li class="nav-item">
+								<a href="hw2.html">Homework 2</a>
+								<ul class="sub-menu">
+									<li><a href="hw2/Part1.html">Part 1</a></li>
+									<li><a href="hw2/Part2.html">Part 2</a></li>
+									<li><a href="hw2/Part3.html">Part 3</a></li>
+									<li><a href="hw2/ExtraCredit.html">Extra Credit</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="hw3.html">Homework 3</a>
+								<ul class="sub-menu">
+									<li><a href="hw3/Part1.html">Part 1</a></li>
+									<li><a href="hw3/Part2.html">Part 2</a></li>
+									<li><a href="hw3/Part3.html">Part 3</a></li>
+									<li><a href="hw3/part4.html">Part 4</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="hw4.html">Homework 4</a>
+								<ul class="sub-menu">
+									<li><a href="hw4.html#tabs-1">Part 1</a></li>
+									<li><a href="hw4.html#tabs-2">Part 2</a></li>
+									<li><a href="hw4.html#tabs-3">Extra Credit</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="hw5.html">Homework 5</a>
+								<ul class="sub-menu">
+									<li><a href="hw5.html#tabs-1">Part 1</a></li>
+									<li><a href="hw5.html#tabs-2">Part 2</a></li>
+									<li><a href="hw5.html#tabs-3">Part 3</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="hw6.html">Homework 6</a>
+								<ul class="sub-menu">
+									<li><a href="hw6.html#tabs-1">Part 1</a></li>
+									<li><a href="hw6.html#tabs-2">Part 2</a></li>
+									<li><a href="hw6.html#tabs-3">Part 3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</section>
+			</div>
+			<div id="tabs-3">
+				<section class="image-gallery">
+					<h1 style="text-align: center">Image Gallery</h1>
+					<a
+						href="hw7/image1.jpg"
+						data-fancybox="images"
+						data-caption="Fancybox gallery demo 1"
+					>
+						<img src="hw7/image1.jpg" alt="Example image 1"
+					/></a>
+					<a
+						href="hw7/image2.jpg"
+						data-fancybox="images"
+						data-caption="Fancybox gallery demo 2"
+					>
+						<img src="hw7/image2.jpg" alt="Example image 2"
+					/></a>
+					<a
+						href="hw7/image3.jpg"
+						data-fancybox="images"
+						data-caption="Fancybox gallery demo 3"
+					>
+						<img src="hw7/image3.jpg" alt="Example image 3"
+					/></a>
+					<a
+						href="hw7/image4.jpg"
+						data-fancybox="images"
+						data-caption="Fancybox gallery demo 4"
+					>
+						<img src="hw7/image4.jpg" alt="Example image 4"
+					/></a>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../default.css" />
+		<script src="part4.js"></script>
+
+		<style>
+			.center-box {
+				position: relative;
+				flex-direction: column;
+				margin: auto;
+				margin-top: 1rem;
+				margin-bottom: 2rem;
+				text-align: center;
+				background-color: #333;
+				border: solid 1px #c3c3c3;
+				max-width: 75%;
+			}
+			#quiz {
+				margin-bottom: 2rem;
+			}
+			.input-box {
+				margin-bottom: 2rem;
+			}
+
+			aside {
+				color: crimson;
+				font-weight: bolder;
+			}
+		</style>
+		<title>Homework 3 - Part 4</title>
+	</head>
+	<body onload="initialize()">
+		<audio id="wrongAudio">
+			<source src="wrong.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+		</audio>
+		<audio id="correctAudio">
+			<source src="correct.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+		</audio>
+
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="../hw3.html">Return to HW3</a></li>
+			</ul>
+		</nav>
+
+		<header><h1 class="center-box">Multiplication Quiz</h1></header>
+
+		<section class="center-box" id="quiz-box"></section>
+	</body>
+</html>

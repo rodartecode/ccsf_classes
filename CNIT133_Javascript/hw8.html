@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Ajax" />
+		<link rel="stylesheet" href="default.css" />
+		<script>
+			function showHint(str) {
+				if (str.length == 0) {
+					document.getElementById("hint").innerHTML = "";
+					return;
+				} else {
+					var xmlhttp = new XMLHttpRequest();
+					xmlhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("hint").innerHTML = this.responseText;
+						}
+					};
+					xmlhttp.open("GET", "getHint.php?q=" + str, true);
+					xmlhttp.send();
+				}
+			}
+		</script>
+		<style>
+			.center-box {
+				margin-top: 3rem;
+				width: 75%;
+				background-color: #fff;
+				color: #333;
+			}
+		</style>
+		<title>Homework 8</title>
+	</head>
+
+	<body>
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="index.html">Return to Index</a></li>
+			</ul>
+		</nav>
+		<section class="center-box">
+			<h1>Type a name!</h1>
+			<form action="javascript:void(0);">
+				First name:
+				<input type="text" name="name" id="name" onkeyup="showHint(this.value)" />
+			</form>
+			<p>Suggestions: <span id="hint"></span></p>
+		</section>
+	</body>
+</html>

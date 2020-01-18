@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../default.css" />
+		<script src="part3.js"></script>
+		<style>
+			.center-box {
+				position: relative;
+				margin: auto;
+				margin-top: 1rem;
+				text-align: center;
+				background-color: #333;
+				border: solid 1px #c3c3c3;
+				max-width: 75%;
+			}
+		</style>
+		<title>Homework 3 - Part 3</title>
+	</head>
+	<body>
+		
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="../hw3.html">Return to HW3</a></li>
+			</ul>
+		</nav>
+
+		<header><h1 class="center-box">Temperature Converter</h1></header>
+
+		<div class="container">
+			<section class="row">
+				<section class="one-half column">
+					<h4 class="center-box">Celsius to Fahrenheit</h4>
+					<article class="center-box">
+						<form action="javascript:void(0);" class="form">
+							<label for="cel_cel">Enter Celsius</label>
+							<input type="number" name="cel_cel" id="cel_cel" value="0" />
+							<input type="submit" value="Submit" onclick="processCel()" />
+						</form>
+					</article>
+					<article class="center-box">
+						<form action="javascript:void(0);" class="form">
+							<label for="cel_fahr">Result in Fahrenheit</label>
+							<input type="number" name="cel_fahr" id="cel_fahr" value="32" readonly />
+							<input type="reset" value="Reset" onclick="clearCel()" />
+						</form>
+					</article>
+				</section>
+				<section class="one-half column">
+					<h4 class="center-box">Fahrenheit to Celsius</h4>
+					<article class="center-box">
+						<form action="javascript:void(0);" class="form">
+							<label for="fahr_fahr">Enter Fahrenheit</label>
+							<input type="number" name="fahr_fahr" id="fahr_fahr" value="32" />
+							<input type="submit" value="Submit" onclick="processFahr()" />
+						</form>
+					</article>
+					<article class="center-box">
+						<form action="javascript:void(0);" class="form">
+							<label for="fahr_cel">Result in Celsius</label>
+							<input type="number" name="fahr_cel" id="fahr_cel" value="0" readonly />
+							<input type="reset" value="Reset" onclick="clearFahr()" />
+						</form>
+					</article>
+				</section>
+			</section>
+		</div>
+	</body>
+</html>

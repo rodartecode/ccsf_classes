@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../default.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="part1.js"></script>
+		<style>
+			#instructions,
+			#flip {
+				padding: 5px;
+				text-align: center;
+				background-color: #333;
+				border: solid 1px #c3c3c3;
+				width: 50%;
+			}
+
+			#flip {
+				display: flex;
+				justify-content: center;
+			}
+
+			#instructions {
+				padding: 10px;
+				display: none;
+			}
+		</style>
+		<title>Homework 3 - Part 1</title>
+	</head>
+
+	<body>
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="../hw3.html">Return to HW3</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<header>
+				<h1>Student Grades</h1>
+				<br />
+			</header>
+			<article class="container">
+				<button class="container" id="flip">
+					Click to Show/Hide Instructions
+				</button>
+				<p class="container" id="instructions">
+					The following webpage contains the heading, Student Grades, and uses a script
+					that inputs a student's homework average, mid-term exam score, final exam score,
+					and ACR (all as integers)
+				</p>
+			</article>
+			<section class="center-box">
+				<form action="javascript:void(0);" id="form">
+					<div class="input-box">
+						<label for="avg">Homework Average:</label>
+						<input type="number" id="form_avg" name="avg" />
+						<span class="error">You must enter a number between 0 and 100!</span><br />
+					</div>
+					<div class="input-box">
+						<label for="midterm">Midterm Exam Grade:</label>
+						<input type="number" id="form_midterm" name="midterm" />
+						<span class="error">You must enter a number between 0 and 100!</span><br />
+					</div>
+					<div class="input-box">
+						<label for="final">Final Exam Grade:</label>
+						<input type="number" id="form_final" name="final" />
+						<span class="error">You must enter a number between 0 and 100!</span><br />
+					</div>
+					<div class="input-box">
+						<label for="acr">ACR:</label>
+						<input type="number" id="form_acr" name="acr" />
+						<span class="error">You must enter a number between 0 and 100!</span><br />
+					</div>
+					<input type="submit" value="Submit" onclick="processPage()" />
+					<input type="reset" onclick="clearPage()" />
+				</form>
+			</section>
+			<section class="center-box" id="result"></section>
+		</div>
+	</body>
+</html>

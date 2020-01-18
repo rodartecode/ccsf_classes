@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../default.css" />
+		<script src="extracredit.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#dollar").focus(function() {
+					$(this).css("background-color", "#6a9fb7");
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#flip").click(function() {
+					$("#result").slideToggle("slow");
+				});
+			});
+		</script>
+
+		<style>
+			#result,
+			#flip {
+				padding: 5px;
+				text-align: center;
+				background-color: #333;
+				border: solid 1px #c3c3c3;
+			}
+
+			#result {
+				padding: 50px;
+				display: none;
+			}
+		</style>
+		<title>Extra Credit: Exchange Rates</title>
+	</head>
+
+	<body>
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="../hw2.html">Return to HW2</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<section>
+				<form action="javascript:void(0);">
+					Input amount in US Dollars:<br />
+					<input type="number" class="textfield" id="dollar" step="0.01" />
+					<button type="submit" onclick="processPage()">Submit</button><br />
+				</form>
+
+				<button id="flip">Click here to show converstion table!!</button>
+
+				<section id="result">
+					<h4>If you haven't entered an amount yet, do it now.</h4>
+					<h2>The foreign exchange rates on June 6, 2017:</h2>
+					<br />
+
+					<table>
+						<tr>
+							<th>Currency</th>
+							<th>Exchange Rate</th>
+							<th>Value</th>
+						</tr>
+						<tr>
+							<td>British Pound</td>
+							<td>0.77521</td>
+							<td class="brit"></td>
+						</tr>
+						<tr>
+							<td>Canadian Dollar</td>
+							<td>1.34461</td>
+							<td class="can"></td>
+						</tr>
+						<tr>
+							<td>European Euro</td>
+							<td>0.88754</td>
+							<td class="euro"></td>
+						</tr>
+						<tr>
+							<td>Japanese Yen</td>
+							<td>109.350</td>
+							<td class="yen"></td>
+						</tr>
+						<tr>
+							<td>Mexican Peso</td>
+							<td>18.2806</td>
+							<td class="mex"></td>
+						</tr>
+					</table>
+				</section>
+			</section>
+		</div>
+	</body>
+</html>

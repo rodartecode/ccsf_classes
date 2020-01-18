@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../default.css" />
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="part2.js"></script>
+		<script>
+			$(function() {
+				$(document).tooltip();
+			});
+		</script>
+		<style>
+			input[type="number"] {
+				text-align: right;
+			}
+		</style>
+		<title>Homework 3 - Part 2</title>
+	</head>
+
+	<body>
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="../hw3.html">Return to HW3</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<header>
+				<h1>Sales Commission</h1>
+				<br />
+			</header>
+			<section class="center-box">
+				<form action="javascript:void(0);" id="name_form">
+					<div>
+						<label for="name">Salesperson: </label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							title="Please make sure that the salesperson's name is spelled correctly"
+						/>
+					</div>
+				</form>
+				<br />
+				<br />
+			</section>
+			<section class="center-box">
+				<form action="javascript:void(0);" id="form">
+					<h5>Input the number of items sold for each item number:</h5>
+					<div>
+						<label for="first">Item 1:</label>
+						<input type="number" id="form_first" name="first" />
+						<span class="error">You must enter a positive number!</span><br />
+					</div>
+					<div>
+						<label for="second">Item 2:</label>
+						<input type="number" id="form_second" name="second" />
+						<span class="error">You must enter a positive number!</span><br />
+					</div>
+					<div>
+						<label for="third">Item 3:</label>
+						<input type="number" id="form_third" name="third" />
+						<span class="error">You must enter a positive number!</span><br />
+					</div>
+					<div>
+						<label for="fourth">Item 4:</label>
+						<input type="number" id="form_fourth" name="fourth" />
+						<span class="error">You must enter a positive number!</span><br />
+					</div>
+					<input type="submit" value="Submit" onclick="processPage()" />
+					<input type="reset" onclick="clearPage()" />
+				</form>
+			</section>
+			<section class="center-box" id="result">
+				<table>
+					<tr>
+						<th>Item #</th>
+						<th>Price</th>
+						<th>Number Sold</th>
+						<th>Total</th>
+					</tr>
+
+					<tr>
+						<td>1</td>
+						<td>$239.99</td>
+						<td><input type="number" class="t" id="int_item1" readonly /></td>
+						<td><input type="number" class="t" id="total_item1" readonly /></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>$129.75</td>
+						<td><input type="number" class="t" id="int_item2" readonly /></td>
+						<td><input type="number" class="t" id="total_item2" readonly /></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>$99.95</td>
+						<td><input type="number" class="t" id="int_item3" readonly /></td>
+						<td><input type="number" class="t" id="total_item3" readonly /></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>$350.89</td>
+						<td><input type="number" class="t" id="int_item4" readonly /></td>
+						<td><input type="number" class="t" id="total_item4" readonly /></td>
+					</tr>
+					<tr>
+						<td colspan="3">Total Amount Sold:</td>
+						<td><input type="number" class="t" id="final_total" readonly /></td>
+					</tr>
+					<tr>
+						<td colspan="3">Total Weekly Earnings:</td>
+						<td><input type="number" class="t" id="salary" readonly /></td>
+					</tr>
+				</table>
+			</section>
+		</div>
+	</body>
+</html>

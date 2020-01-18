@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+		</script>
+		<style>
+			#result {
+				color: antiquewhite;
+			}
+		</style>
+		<meta name="description" content="Homework 5: Arrays" />
+		<link rel="stylesheet" href="default.css" />
+		<title>Homework 5</title>
+	</head>
+
+	<body onload="initialize()">
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="index.html">Return to Index</a></li>
+			</ul>
+		</nav>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Part 1</a></li>
+				<li><a href="#tabs-2">Part 2</a></li>
+				<li><a href="#tabs-3">Part 3</a></li>
+			</ul>
+			<div id="tabs-1"></div>
+			<div id="tabs-2"></div>
+			<div id="tabs-3"></div>
+		</div>
+		<script src="hw5/hw5.js"></script>
+	</body>
+</html>

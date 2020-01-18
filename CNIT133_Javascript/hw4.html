@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+		</script>
+		<script>
+			$(function() {
+				$(".draggable").draggable();
+			});
+		</script>
+		<meta name="description" content="HW4 Looping Statements" />
+		<link rel="stylesheet" href="default.css" />
+		<style>
+			.draggable {
+				padding: 0.5em;
+				margin-top: 1rem;
+				width: 75%;
+				border-style: solid;
+				border-width: medium;
+				background-color: antiquewhite;
+			}
+
+			tr:nth-child(even) {
+				background-color: rgb(132, 223, 178);
+			}
+			tr:nth-child(odd) {
+				background-color: antiquewhite;
+			}
+
+			#table-header tr {
+				background-color: maroon;
+				color: white;
+			}
+
+			input[type="number"] {
+				-webkit-appearance: none;
+
+				width: 100%;
+				border: 1px solid #333;
+				margin: 0;
+
+				font-family: inherit;
+				font-size: 90%;
+
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			pre {
+				color: antiquewhite;
+				width:20rem;
+				height:20rem;
+				justify-content: center;
+				align-content: center;
+			}
+		</style>
+		<title>Homework 4</title>
+	</head>
+
+	<body onload="initialize()">
+		<nav>
+			<ul class="navbar">
+				<li class="nav-item"><a href="index.html">Return to Index</a></li>
+			</ul>
+		</nav>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Part 1</a></li>
+				<li><a href="#tabs-2">Part 2</a></li>
+				<li><a href="#tabs-3">Extra Credit</a></li>
+			</ul>
+			<div id="tabs-1">
+				<p class="center-box draggable" id="p10"></p>
+				<p class="center-box draggable" id="p11"></p>
+				<p class="center-box draggable" id="p12"></p>
+				<p class="center-box draggable" id="p13"></p>
+			</div>
+			<div id="tabs-2"></div>
+			<div id="tabs-3"></div>
+		</div>
+
+		<script src="hw4/hw4.js"></script>
+	</body>
+</html>
