@@ -1,0 +1,102 @@
+body {
+  background-color: yellow;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+table {
+  border-spacing: 5px;
+  border-collapse: separate;
+  background-color: cyan;
+
+  animation-name: table;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.firstLetter {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.right {
+  text-align: right;
+}
+
+.blueItalic {
+  color: blue;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+.box {
+  width: 5rem;
+  background-color: crimson;
+  color: black;
+  text-align: center;
+  font-family: cursive;
+  position: relative;
+  animation-name: boxAnim;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+
+@keyframes table {
+  from {
+    background: cyan;
+  }
+  to {
+    background: green;
+  }
+
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes boxAnim {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: calc(100% - 80px);
+  }
+  100% {
+    left: 0px;
+  }
+}
