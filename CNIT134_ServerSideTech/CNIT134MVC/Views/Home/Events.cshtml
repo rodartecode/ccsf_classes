@@ -1,0 +1,23 @@
+﻿@model EventsList
+
+@{
+    ViewData["Title"] = "Events";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h2 class="display-4">ASP.NET Adventure Seminar Events!</h2>
+<p>We are very excited to to able to host all of you for this exciting event. All of the following events are free to attend for anybody who would like to participate. </p>
+<p>The following events will be available to attend. Please arrive early, as sitting will be limited.   </p>
+<ul>
+    @foreach (var item in Model.Events)
+    {
+        <li>
+            @{
+                var listItem = item.Title + " - Room: " + item.Location + " - " + item.Time;
+
+                @Html.DisplayFor(modelItem => listItem)
+            }
+
+        </li>
+    }
+</ul>

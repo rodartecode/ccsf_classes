@@ -1,0 +1,29 @@
+{
+	"courses": [
+		{
+			"Title": "Weight Lifting",
+			"Location": "Weight Lifting Room",
+			"Time": "9:00am"
+		},
+		{
+			"Title": "CNIT132",
+			"Location": "Online",
+			"Time": "24H"
+		},
+		{
+			"Title": "IDST17",
+			"Location": "Science 108",
+			"Time": "11:10am"
+		},
+		{
+			"Title": "CNIT134",
+			"Location": "Online",
+			"Time": "24H"
+		},
+		{
+			"Title": "PHYC41",
+			"Location": "Science 108",
+			"Time": "9:40am"
+		}
+	]
+}

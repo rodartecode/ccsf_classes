@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "68TsKBdDGRNkeMiC6xRRJHUCUPS5WvvP0tLKf1NjurA4xh4YDxi9iegv6WzUvosfeHVuishriujANAJfR9bXhg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jesse\\Code\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\CNIT134MVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jesse\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
