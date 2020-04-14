@@ -5,3 +5,11 @@
 .jpeg
 .doc
 .docx
+.exe
+.dll
+.cache
+.suo
+.ide
+.ico
+.pdb
+.dtbcache.v2
