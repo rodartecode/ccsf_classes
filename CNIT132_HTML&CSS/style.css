@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  min-width: 200px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section p,
+section ul li {
+  max-width: 700px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+form label {
+  margin: 0.2rem;
+}
+
+form label textarea {
+  margin-top: 0.2rem;
+  display: block;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.primary-img {
+  max-width: 600px;
+  height: auto;
+}

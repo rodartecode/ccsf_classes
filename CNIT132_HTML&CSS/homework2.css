@@ -1,3 +1,35 @@
+* {
+  border-style: dashed;
+  border-color: aqua;
+}
+
+* * {
+  border-color: brown;
+}
+
+* * * {
+  border-color: yellowgreen;
+}
+
+* * * * {
+  border-color: violet;
+}
+
+* * * * * {
+  border-color: aliceblue;
+}
+* * * * * * {
+  border-color: blue;
+}
+
+* * * * * * * {
+  border-color: red;
+}
+
+* * * * * * * * {
+  border-color: green;
+}
+
 body {
   background-color: yellow;
 }
