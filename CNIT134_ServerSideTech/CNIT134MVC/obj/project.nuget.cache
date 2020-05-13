@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "68TsKBdDGRNkeMiC6xRRJHUCUPS5WvvP0tLKf1NjurA4xh4YDxi9iegv6WzUvosfeHVuishriujANAJfR9bXhg==",
+  "dgSpecHash": "VSNn9wSo9BAvtbyV3wST1JhzE9Kj4dG/u8jiyAgg2GXTexLmvnobxJfnm0Ndn9HEBj6xarrdBLLtENwL3iYOAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jesse\\Code\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\CNIT134MVC.csproj",
+  "projectFilePath": "C:\\Users\\Jesse\\Code\\wincode\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\CNIT134MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jesse\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

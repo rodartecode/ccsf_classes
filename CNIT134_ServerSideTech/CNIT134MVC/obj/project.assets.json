@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jesse\\Code\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\CNIT134MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Jesse\\Code\\wincode\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\CNIT134MVC.csproj",
       "projectName": "CNIT134MVC",
-      "projectPath": "C:\\Users\\Jesse\\Code\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\CNIT134MVC.csproj",
+      "projectPath": "C:\\Users\\Jesse\\Code\\wincode\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\CNIT134MVC.csproj",
       "packagesPath": "C:\\Users\\Jesse\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jesse\\Code\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\obj\\",
+      "outputPath": "C:\\Users\\Jesse\\Code\\wincode\\ccsf_classes\\CNIT134_ServerSideTech\\CNIT134MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jesse\\AppData\\Roaming\\NuGet\\NuGet.Config",
