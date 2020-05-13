@@ -6,7 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+header {
+  width: 100%;
+}
 h1 {
   text-align: center;
 }
@@ -25,6 +27,18 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+aside {
+  margin: 1rem;
+  border: 1px solid gray;
+  border-radius: 7px;
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+}
+
+p {
+  margin: 0.6rem;
 }
 
 section p,
@@ -60,4 +74,42 @@ footer {
 .primary-img {
   max-width: 600px;
   height: auto;
+}
+
+@media (max-width: 1200px) {
+  #buffer {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  section {
+    margin: 0.2rem;
+  }
+}
+
+@media (max-width: 625px) {
+  #random {
+    width: 95%;
+  }
+  .primary-img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  ul {
+    padding-inline-start: 0rem;
+    margin: 0.3rem;
+  }
 }
