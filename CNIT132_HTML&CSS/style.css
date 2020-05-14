@@ -3,14 +3,18 @@ body {
   flex-direction: column;
   align-content: space-between;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 header {
   width: 100%;
 }
 h1 {
   text-align: center;
+}
+h4 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 nav {
@@ -19,6 +23,17 @@ nav {
 
 nav ul {
   list-style: none;
+  margin: 0px;
+}
+
+#subnav ul {
+  padding-inline-start: 0px;
+  margin: 0.3rem;
+  text-align: center;
+}
+
+h3 {
+  margin: 0px;
 }
 
 section {
@@ -89,6 +104,10 @@ footer {
 
   nav {
     text-align: center;
+  }
+  nav ul {
+    padding-inline-start: 0px;
+    margin: 0.3rem;
   }
 }
 
